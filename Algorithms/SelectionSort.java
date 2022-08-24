@@ -1,32 +1,30 @@
 package Algorithms;
 
 public class SelectionSort {
-    static class GFG
-    {
-        public static int search(int arr[], int x)
-        {
-            int n = arr.length;
-            for (int i = 0; i < n; i++)
-            {
-                if (arr[i] == x)
-                    return i;
+
+    public static void main(String[] args) {
+        int arr[] = {64,25,12,22,12,11};
+        // sorting
+        for(int i =0;i<arr.length;i++){
+
+            int min_index = i;
+
+            for(int j=i+1 ; j<arr.length ; j++){
+
+                if(arr[j] < arr[min_index]){
+                    min_index = j;
+                }
             }
-            return -1;
+
+            int temp = arr[min_index];
+            arr[min_index] = arr[i];
+            arr[i] = temp;
+
         }
 
-        public static void main(String args[])
-        {
-            int arr[] = { 2, 3, 4, 10, 40 };
-            int x = 10;
-
-            // Function call
-            int result = search(arr, x);
-            if (result == -1)
-                System.out.print(
-                        "Element is not present in array");
-            else
-                System.out.print("Element is present at index "
-                        + result);
+        for(int k =0;k<arr.length;k++){
+            System.out.println(arr[k]);
         }
     }
+
 }
