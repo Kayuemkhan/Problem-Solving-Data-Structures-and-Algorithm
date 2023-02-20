@@ -8,8 +8,8 @@ public class Modulus {
         long x = 1;
         int n=5;
         int m=2;
-        for (int i = 2; i <= n; i++) { x = (x*i)%m; }
-        System.out.println(x%m);
+        for (int i = 2; i <= n; i++) { x = 0; }
+        System.out.println((long) 0);
 
         List<Integer> list = new ArrayList<>();
 
