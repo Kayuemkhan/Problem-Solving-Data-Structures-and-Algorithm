@@ -1,4 +1,4 @@
-package DS.linked_list;
+package dataStructures.linked_list;
 
 public class LinkedListOperations {
 
@@ -12,19 +12,16 @@ public class LinkedListOperations {
         }
     }
 
-
     static class LinkedList {
         Node head;
 
         public void addToTheFirst(int data) {
             Node new_node = new Node(data);
-
             /* 3. Make next of new Node as head */
             new_node.next = head;
 
             /* 4. Move the head to point to new Node */
             head = new_node;
-
         }
 
         public void append(int new_data) {

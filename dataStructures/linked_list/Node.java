@@ -1,4 +1,4 @@
-package DS.linked_list;//{ Driver Code Starts
+package dataStructures.linked_list;//{ Driver Code Starts
 /*package whatever //do not write package name here */
 import java.util.*;
 class Node {
