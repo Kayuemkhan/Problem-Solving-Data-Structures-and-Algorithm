@@ -20,6 +20,7 @@ public class Pattern_2_Right_Angled_Triangle_Pattern {
     public static void main(String[] args) {
         printTriangle(1);
     }
+
     static void printTriangle(int n) {
         // code here
         for (int i = 0; i <= n; i++) {
