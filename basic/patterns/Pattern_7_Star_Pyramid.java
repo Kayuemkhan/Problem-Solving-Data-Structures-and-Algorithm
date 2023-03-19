@@ -3,12 +3,13 @@ package basic.patterns;
 public class Pattern_7_Star_Pyramid {
     /*
     Input Format: N = 6
-     *
-     ***
-     *****
-     *******
+    Result:
+         *
+        ***
+       *****
+      *******
      *********
-     ***********
+    ***********
 
 
      In this particular pattern, we run the outer loop for N times as we have to print N rows as usual. Now, the question arises what will be the logic behind the inner loop?
