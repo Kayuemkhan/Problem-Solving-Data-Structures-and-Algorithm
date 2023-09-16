@@ -23,11 +23,11 @@ public class MissingNumberInArray {
 //
         // four missing number
         printMissingNumber(new int[]{1, 2, 3, 4, 9, 8}, 10);
- 
+
         // Only one missing number in array
         int[] iArray = new int[]{1, 2, 3, 5};
         int missing = getMissingNumber(iArray, 10);
-        System.out.printf("Missing number in array %s is %d %n", 
+        System.out.printf("Missing number in array %s is %d %n",
                            Arrays.toString(iArray), missing);
     }
    /**
