@@ -10,11 +10,10 @@
 <body>
     <details>
     <summary>
-        <span id =10> OOP </span>
-    </summary>
-    
-    <div id="OOP">
-            <h1>Learning OOP : </h1>
+        <span > OOP </span>
+                  </summary>
+  
+    <h1>Learning OOP : </h1>
             <h3>Core Knowledge</h3> 
             <h5>
             <i>Source Of Knowledge:</i>
@@ -61,10 +60,6 @@
             <li>Interface Segregation</li>
             <li>Delegation</li>
             </ol>
-        </div>
-        <div id = "algorithm">
-        <h1> Problem Solving </h1>
-        <h3>
         <i>
     
  </details>
