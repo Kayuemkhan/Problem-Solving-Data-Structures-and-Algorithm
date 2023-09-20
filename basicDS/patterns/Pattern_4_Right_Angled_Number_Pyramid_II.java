@@ -1,4 +1,4 @@
-package basic.patterns;
+package basicDS.patterns;
 
 public class Pattern_4_Right_Angled_Number_Pyramid_II {
     /*

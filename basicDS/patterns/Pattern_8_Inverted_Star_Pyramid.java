@@ -1,4 +1,4 @@
-package basic.patterns;
+package basicDS.patterns;
 
 public class Pattern_8_Inverted_Star_Pyramid {
 

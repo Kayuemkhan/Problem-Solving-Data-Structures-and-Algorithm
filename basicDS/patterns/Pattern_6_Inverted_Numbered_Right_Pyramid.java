@@ -1,4 +1,4 @@
-package basic.patterns;
+package basicDS.patterns;
 
 public class Pattern_6_Inverted_Numbered_Right_Pyramid {
     /*

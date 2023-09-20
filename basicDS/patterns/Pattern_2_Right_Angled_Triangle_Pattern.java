@@ -1,4 +1,4 @@
-package basic.patterns;
+package basicDS.patterns;
 
 public class Pattern_2_Right_Angled_Triangle_Pattern {
     /*

@@ -1,0 +1,50 @@
+Q1. What will happen if you do not initialize an Array?
+->
+If the array is not initialized at the time of declaration or any time after that then it will contain some random values in each memory position. These random values can be of two types:
+
+1. Default values.
+
+1.1 If the array elements are of object types then the default value is null.
+
+import java.io.*;
+
+class GFG {
+    public static void main(String[] args)
+    {
+        Integer[] array = new Integer[5];
+        for (Integer p : array) {
+            System.out.print(p + " ");
+        }
+    }
+} -> Null
+
+
+1.2. If the array elements are of primitive data types then the default value is 0.
+
+import java.io.*;
+
+class GFG {
+    public static void main(String[] args)
+    {
+        int[] array = new int[5];
+        for (int p : array) {
+            System.out.print(p + " ");
+        }
+    }
+}
+
+
+
+Q2:Why does accessing an Array element take O(1) time?
+As Arrays are allocated contiguously in memory, Fetching a value via an index of the array is an arithmetic operation. All arithmetic operations are done in constant
+time i.e., O(1).
+
+In an array, we have the memory address of index 0 (Base address). By adding the product of the index number (of value to be fetched) and the size of one
+element (ex. int size is 4 bytes) with the base address, we can have the address of that index’s value. we don’t have to iterate through the array. So it’s done in O(1).
+
+Q3:When to use Array over a List?
+    i.When we require a multidimensional structure to store the data then we use arrays over lists as lists can be one dimensional only.
+    ii.If we require fixed length and static allocation then, arrays are used over lists.
+    iii.When the faster processing of data is required then arrays are used over lists.
+    iv.Primitive data types can be stored in arrays directly but not in lists so, we use arrays over lists.
+

@@ -14,7 +14,7 @@
         <h5>
         <i>Source Of Knowledge:</i>
         </h5>
-        <p>1. Book - Object Oriented Software Engineering ( LethBridge and Lagainaire)</p>
+        <p>1. Book - Object-Oriented Software Engineering ( LethBridge and Lagainaire)</p>
         <p>2. Video (For Basics) -
          <a href="https://www.youtube.com/watch?v=SiBw7os-_zI&ab_channel=freeCodeCamp.org">YouTube ( freeCodeCamp.org )</a> </p>
         <h5><i>Topics:</i></h5>
@@ -24,7 +24,7 @@
         <li>Relation Between Class and Objects</li>
         <li>Real Life Implementations of Class and Objects</li>
         <li>Static Class</li>
-        <li>Constractor</li>
+        <li>Constructor</li>
         <li>Polymorphism</li>
         <li>Abstraction</li>
         <li>Inheritance</li>

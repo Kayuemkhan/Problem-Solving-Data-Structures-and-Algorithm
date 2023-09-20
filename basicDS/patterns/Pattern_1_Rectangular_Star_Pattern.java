@@ -1,4 +1,4 @@
-package basic.patterns;
+package basicDS.patterns;
 
 public class Pattern_1_Rectangular_Star_Pattern {
     /*
