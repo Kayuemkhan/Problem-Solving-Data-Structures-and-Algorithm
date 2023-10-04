@@ -1,5 +1,7 @@
 package basic_learn.know_basic_maths;
 
+import java.util.Scanner;
+
 public class CheckIfANumberIsPrimeOrNot {
     public static boolean isPrime(int N) {
 
@@ -12,12 +14,17 @@ public class CheckIfANumberIsPrimeOrNot {
 
     }
     public static void main(String args[]) {
-        int n = 20;
-        boolean ans = (isPrime(n));
-        if (n != 1 && ans == true) {
-            System.out.println("Prime Number");
-        } else {
-            System.out.println("Non-Prime Number");
+        Scanner scanner = new Scanner(System.in);
+        int inputNum = scanner.nextInt();
+        int n =1;
+        while (inputNum >1){
+            n++;
+            inputNum--;
+            boolean ans = (isPrime(n));
+            if (ans) {
+                System.out.print(n + " ");
+            }
         }
+
     }
 }
