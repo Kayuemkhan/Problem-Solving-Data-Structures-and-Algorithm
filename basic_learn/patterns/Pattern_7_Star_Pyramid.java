@@ -1,5 +1,7 @@
 package basic_learn.patterns;
 
+import java.util.Scanner;
+
 public class Pattern_7_Star_Pyramid {
     /*
     Input Format: N = 6
@@ -25,7 +27,8 @@ public class Pattern_7_Star_Pyramid {
 
     public static void main(String[] args) {
 
-        int n=6;
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
         // This is the outer loop which will loop for the rows.
         for (int i = 0; i < n; i++) {
 
