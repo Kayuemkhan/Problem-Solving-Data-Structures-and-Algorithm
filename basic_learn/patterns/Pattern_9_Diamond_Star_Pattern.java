@@ -1,5 +1,7 @@
 package basic_learn.patterns;
 
+import java.util.Scanner;
+
 public class Pattern_9_Diamond_Star_Pattern {
     /*
     Input Format: N = 6
@@ -28,7 +30,9 @@ public class Pattern_9_Diamond_Star_Pattern {
      */
 
     public static void main(String[] args) {
-        int N=5;
+        Scanner scanner = new Scanner(System.in);
+
+        int N=scanner.nextInt();
         star(N);
         inverted(N);
     }
@@ -55,16 +59,14 @@ public class Pattern_9_Diamond_Star_Pattern {
 
     private static void star(int n) {
         for(int i =0;i< n;i++){
-            for (int j = 0; j < n-i-1; j++) {
+            for (int j = 0; j < n-i; j++) {
                 System.out.print(" ");
             }
 
-            for (int j = 0; j < 2 * i + 1; j++) {
+            for (int j = 0; j < 2 * i -1; j++) {
                 System.out.print("*");
             }
-            for (int j = 0; j < n-i-1; j++) {
-                System.out.print(" ");
-            }
+
 
             System.out.println();
         }
