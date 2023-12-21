@@ -1,4 +1,4 @@
-package basicDS.array;
+package dataStructures.array;
 
 public class Array_Insertions {
     public static void main(String[] args) {

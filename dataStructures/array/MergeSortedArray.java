@@ -1,4 +1,4 @@
-package basicDS.array;
+package dataStructures.array;
 /*
 Merge Sorted Array
 Solution
@@ -31,8 +31,6 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 
 Follow up: Can you come up with an algorithm that runs in O(m + n) time?
  */
-
-import java.util.Arrays;
 
 public class MergeSortedArray {
     public static void main(String[] args) {
