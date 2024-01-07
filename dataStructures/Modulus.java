@@ -1,4 +1,4 @@
-package basicDS;
+package dataStructures;
 
 import java.util.Scanner;
 
