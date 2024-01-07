@@ -8,55 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div id="OOP">
-        <h1>Learning OOP : </h1>
-        <h3>Core Knowledge</h3> 
-        <h5>
-        <i>Source Of Knowledge:</i>
-        </h5>
-        <p>1. Book - Object-Oriented Software Engineering ( LethBridge and Lagainaire)</p>
-        <p>2. Video (For Basics) -
-         <a href="https://www.youtube.com/watch?v=SiBw7os-_zI&ab_channel=freeCodeCamp.org">YouTube ( freeCodeCamp.org )</a> </p>
-        <h5><i>Topics:</i></h5>
-        <ul>
-        <li>Class</li>
-        <li>Objects</li>
-        <li>Relation Between Class and Objects</li>
-        <li>Real Life Implementations of Class and Objects</li>
-        <li>Static Class</li>
-        <li>Constructor</li>
-        <li>Polymorphism</li>
-        <li>Abstraction</li>
-        <li>Inheritance</li>
-        <li>Encapsulation</li>
-        <li>This</li>
-        <li>Final</li>
-            <li><a href = "https://www.geeksforgeeks.org/anonymous-inner-class-java/">Annoumous Inner class</a></li>
-        </ul> 
-        <h3>Some Basics Questions: </h3>
-        <ol>
-            <li>Run time call vs Compile Time call</li>
-            <li>Difference Between Abstraction vs Encapsulation</li>
-            <li>Difference Between Abstraction vs Interface</li>
-            <li>Sealed Class</li>
-            <li>Singleton Class</li>
-            <details>
-        <summary>
-<span id=800><b>Why do we need inheritance? Can't we just define the object of super class inside a subclass to inherit the features?</b> </span></summary>
-  Hello world
-</details>
-        </ol>
-        <h3>OOP Design Principles:</h3>
-        <ol>
-        <li>DRY</li>
-        <li>SRP</li>
-        <li>Open Closed</li>
-        <li>Liskov Substitution</li>
-        <li>DI</li>
-        <li>Interface Segregation</li>
-        <li>Delegation</li>
-        </ol>
-    </div>
     <div id = "algorithm">
     <h1> Problem Solving </h1>
     <h3>
@@ -584,5 +535,54 @@ Source : A **linkedIN** posts
 - Topological Sort
 - Directed Graph
 
+<div id="OOP">
+<h1>Learning OOP : </h1>
+<h3>Core Knowledge</h3>
+<h5>
+<i>Source Of Knowledge:</i>
+</h5>
+<p>1. Book - Object-Oriented Software Engineering ( LethBridge and Lagainaire)</p>
+<p>2. Video (For Basics) -
+<a href="https://www.youtube.com/watch?v=SiBw7os-_zI&ab_channel=freeCodeCamp.org">YouTube ( freeCodeCamp.org )</a> </p>
+<h5><i>Topics:</i></h5>
+<ul>
+<li>Class</li>
+<li>Objects</li>
+<li>Relation Between Class and Objects</li>
+<li>Real Life Implementations of Class and Objects</li>
+<li>Static Class</li>
+<li>Constructor</li>
+<li>Polymorphism</li>
+<li>Abstraction</li>
+<li>Inheritance</li>
+<li>Encapsulation</li>
+<li>This</li>
+<li>Final</li>
+<li><a href = "https://www.geeksforgeeks.org/anonymous-inner-class-java/">Annoumous Inner class</a></li>
+</ul>
+<h3>Some Basics Questions: </h3>
+<ol>
+<li>Run time call vs Compile Time call</li>
+<li>Difference Between Abstraction vs Encapsulation</li>
+<li>Difference Between Abstraction vs Interface</li>
+<li>Sealed Class</li>
+<li>Singleton Class</li>
+<details>
+<summary>
+<span id=800><b>Why do we need inheritance? Can't we just define the object of super class inside a subclass to inherit the features?</b> </span></summary>
+Hello world
+</details>
+        </ol>
+        <h3>OOP Design Principles:</h3>
+        <ol>
+        <li>DRY</li>
+        <li>SRP</li>
+        <li>Open Closed</li>
+        <li>Liskov Substitution</li>
+        <li>DI</li>
+        <li>Interface Segregation</li>
+        <li>Delegation</li>
+        </ol>
+    </div>
 </body>
 </html>
