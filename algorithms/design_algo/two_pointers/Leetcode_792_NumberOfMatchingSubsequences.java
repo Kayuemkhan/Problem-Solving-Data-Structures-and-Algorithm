@@ -8,7 +8,7 @@ public class Leetcode_792_NumberOfMatchingSubsequences {
         String[]  words = {"a","bb","acd","ace"} ;
         numMatchingSubseq(s,words);
     }
-    public static int numMatchingSubseq(String s, String[] words) {
+    public static void numMatchingSubseq(String s, String[] words) {
         for (String word : words) {
             System.out.println(word);
         }
@@ -21,6 +21,5 @@ public class Leetcode_792_NumberOfMatchingSubsequences {
 
             }
         }
-        return 3;
     }
 }
