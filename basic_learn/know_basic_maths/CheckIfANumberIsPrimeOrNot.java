@@ -22,7 +22,10 @@ public class CheckIfANumberIsPrimeOrNot {
             inputNum--;
             boolean ans = (isPrime(n));
             if (ans) {
-                System.out.print(n + " ");
+                System.out.println(n + " "+"prime");
+            }
+            else{
+                System.out.println(n + " "+"Not prime");
             }
         }
 
