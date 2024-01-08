@@ -9,8 +9,8 @@ public class Leetcode_792_NumberOfMatchingSubsequences {
         numMatchingSubseq(s,words);
     }
     public static int numMatchingSubseq(String s, String[] words) {
-        for(int i =0;i<words.length;i++){
-            System.out.println(words[i]);
+        for (String word : words) {
+            System.out.println(word);
         }
         int i =0,j=0;
         int k=0;
