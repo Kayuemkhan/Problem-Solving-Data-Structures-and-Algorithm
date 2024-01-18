@@ -13,19 +13,19 @@ public class CheckIfANumberIsPrimeOrNot {
         return true;
 
     }
+
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
         int inputNum = scanner.nextInt();
-        int n =1;
-        while (inputNum >1){
+        int n = 1;
+        while (inputNum > 1) {
             n++;
             inputNum--;
             boolean ans = (isPrime(n));
             if (ans) {
-                System.out.println(n + " "+"prime");
-            }
-            else{
-                System.out.println(n + " "+"Not prime");
+                System.out.println(n + " " + "prime");
+            } else {
+                System.out.println(n + " " + "Not prime");
             }
         }
 

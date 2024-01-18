@@ -7,11 +7,11 @@ public class A_Almost_Prime {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
 
-        int sum =0;
+        int sum = 0;
 
         for (int i = 1; i <= n; i++) {
-            if( n % i == 0 ){
-                if(isPrime(i)){
+            if (n % i == 0) {
+                if (isPrime(i)) {
                     sum++;
                 }
             }
@@ -19,9 +19,10 @@ public class A_Almost_Prime {
         System.out.println(sum);
 
     }
+
     public static boolean isPrime(int N) {
 
-        if(N==1){
+        if (N == 1) {
             return false;
         }
 

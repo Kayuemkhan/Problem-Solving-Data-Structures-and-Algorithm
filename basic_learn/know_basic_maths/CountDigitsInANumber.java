@@ -11,7 +11,7 @@ package basic_learn.know_basic_maths;
 
 public class CountDigitsInANumber {
     public static void main(String[] args) {
-        int n =123;
+        int n = 123;
         int flag = 0;
 
         do {

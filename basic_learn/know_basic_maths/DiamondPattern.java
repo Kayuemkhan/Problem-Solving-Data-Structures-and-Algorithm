@@ -1,4 +1,5 @@
 package basic_learn.know_basic_maths;
+
 import java.util.Scanner;
 
 public class DiamondPattern {

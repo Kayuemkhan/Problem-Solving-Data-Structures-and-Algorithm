@@ -22,10 +22,10 @@ package basic_learn.matrix;
 public class SearchInMatrix {
     public static void main(String[] args) {
         int x = 8;
-        int[][] arr = { { 0, 6, 8, 9, 11 },
-                { 20, 22, 28, 29, 31 },
-                { 36, 38, 50, 61, 63 },
-                { 64, 66, 100, 122, 128 } };
+        int[][] arr = {{0, 6, 8, 9, 11},
+                {20, 22, 28, 29, 31},
+                {36, 38, 50, 61, 63},
+                {64, 66, 100, 122, 128}};
 
         boolean found = false;
         for (int[] ints : arr) {
@@ -36,7 +36,7 @@ public class SearchInMatrix {
                 }
             }
         }
-        if (!found){
+        if (!found) {
 
             System.out.println("Not Found");
         }
