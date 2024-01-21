@@ -61,40 +61,59 @@ class Solution {
 class Solution2 {
 
     public static void main(String[] args) {
-        int[] nums = {1,2,2};
+        int[] nums = {5,7,7,8,8,10};
         Arrays.sort(nums);
-        int target =2;
-        ArrayList<Integer> fal = new ArrayList<>();
+        int target =8;
+        int[] fal = {-1,-1};
         int t=0;
         int l = 0;
         int r= nums.length-1;
         int m ;
+
         while(l<=r){
             m = l + (r-l) /2 ;
 
             System.out.println("m");
             System.out.println(m);
-            System.out.println(l);
+            System.out.println("rNow");
             System.out.println(r);
+            System.out.println("lNow");
+            System.out.println(l);
+            System.out.println("nums[m]");
+            System.out.println(nums[m]);
+
+            System.out.println();
 
             if( nums[m] == target ){
-                fal.add(m);
+                fal[t] = m;
+
                 t++;
             }
-            if(nums[m] < target){
+            if(nums[m] < target ){
                 l = m+1;
             }
+            else if(nums[m] == target && r == nums.length-1){
+                l= m+1;
+            }
+
             else{
                 r = m-1;
             }
+
+            System.out.println("rThen");
+            System.out.println(r);
+            System.out.println("lThen");
+            System.out.println(l);
+            System.out.println();
+            System.out.println();
         }
 
-        Collections.sort(fal);
-
-        System.out.println();
-        System.out.println();
+        if(fal[0] !=-1 && fal[1] ==-1){
+            fal[1] = fal[0];
+        }
+        Arrays.sort(fal);
         for (int j : fal) {
-            System.out.println(j + " ");
+            System.out.println(j);
         }
 
     }
