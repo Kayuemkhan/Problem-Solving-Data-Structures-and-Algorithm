@@ -121,18 +121,38 @@ class Solution2 {
 class Solution3 {
 
     public static void main(String[] args) {
-        int[] nums = {1,2,2};
-        Arrays.sort(nums);
-        int target =2;
-        LinkedList<Integer> fal = new LinkedList<>();
-        for (int i = 0; i < nums.length; i++) {
-            if(nums[i] == target){
-                fal.add(i);
+        int[] arr = {37,12,28,9,100,56,80,5,12};
+        int[] numsCopied = Arrays.copyOf(arr,arr.length);
+        Arrays.sort(arr);
+        int inddex =1;
+        for (int i : arr) {
+            System.out.println(i);
+        }
+        int[] dataForReturn = arr;
+        HashMap<Integer,Integer> hashMap = new HashMap<>();
+        for (int i = 0; i < arr.length; i++) {
+
+            if(hashMap.containsKey(numsCopied[i])){
+                System.out.println("copied");
+                System.out.println(numsCopied[i]);
             }
+
+            if(!hashMap.containsKey(numsCopied[i])){
+                hashMap.put(arr[i],inddex++);
+            }
+
+
         }
-        for (Integer integer : fal) {
-            System.out.println(integer);
+        for (Integer i : hashMap.keySet()) {
+            System.out.println("key: "+i+" Value: "+hashMap.get(i));
         }
+        for (int j : numsCopied ) {
+            System.out.println(hashMap.get(j));
+//            System.out.println("J");
+//            System.out.println(j);
+
+        }
+
 
     }
 }
