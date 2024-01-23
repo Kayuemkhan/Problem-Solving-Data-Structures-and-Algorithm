@@ -102,18 +102,41 @@ class Solution2 {
 class Solution3 {
 
     public static void main(String[] args) {
-        int[] nums = {1,2,2};
-        Arrays.sort(nums);
-        int target =2;
-        LinkedList<Integer> fal = new LinkedList<>();
-        for (int i = 0; i < nums.length; i++) {
-            if(nums[i] == target){
-                fal.add(i);
+        String[] words = {"abc","bcd","aaaa","cbc"};
+        char x = 'a';
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        int t =0;
+        for (int i = 0; i < words.length; i++) {
+            if(words[i].toCharArray().equals(x)){
+                arrayList.add(i);
+                t++;
             }
         }
-        for (Integer integer : fal) {
-            System.out.println(integer);
+
+
+
+
+    }
+}
+class Solution4 {
+
+    public static void main(String[] args) {
+        List<String> words = new ArrayList<>();
+        String s = "a";
+
+        if(s.length() != words.size()){
+            return;
         }
+
+        for (int i = 0; i < s.length(); i++) {
+                if(!words.get(i).startsWith(String.valueOf(s.charAt(i)))){
+                    System.out.println(false);
+                    return;
+                }
+        }
+
+
+
 
     }
 }
