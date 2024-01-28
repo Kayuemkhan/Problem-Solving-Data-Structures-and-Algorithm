@@ -5,7 +5,7 @@ import java.io.*;
 class BinarySearch {
 
 	// Returns index of x if it is present in arr[].
-	int binarySearch(int arr[], int x)
+	int binarySearch(int[] arr, int x)
 	{
 		int l = 0, r = arr.length - 1;
 		while (l <= r) {
