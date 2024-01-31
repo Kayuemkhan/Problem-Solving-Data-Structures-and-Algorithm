@@ -25,7 +25,6 @@ public class A_Almost_Prime {
         if (N == 1) {
             return false;
         }
-
         for (int i = 2; i < N; i++) {
             if (N % i == 0) {
                 return false;
