@@ -4,24 +4,19 @@ import java.util.Arrays;
 public class IntegerSet {
 
     public static void main(String[] args) {
-        int[] nums = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-
-        StringBuilder sum = new StringBuilder();
-
-        for (int num : nums) {
-            sum.append(num);
+        int[] nums = {0,1,2,2,3,0,4,2};
+        Arrays.sort(nums);
+        int val = 2;
+        System.out.println(Arrays.toString(nums));
+        int j =0;
+        for (int i = 0; i < nums.length; i++) {
+            if(nums[i] != val){
+                nums[j] = nums[i];
+                j++;
+            }
         }
+        System.out.println(Arrays.toString(nums));
 
-        BigInteger bigSum = new BigInteger(sum.toString()).add(BigInteger.ONE);
-
-        String sumString = bigSum.toString();
-
-        int[] output = new int[sumString.length()];
-
-        for (int i = 0; i < sumString.length(); i++) {
-            output[i] = Character.getNumericValue(sumString.charAt(i));
-        }
-
-        System.out.println(Arrays.toString(output));
+        System.out.println(j);
     }
 }
