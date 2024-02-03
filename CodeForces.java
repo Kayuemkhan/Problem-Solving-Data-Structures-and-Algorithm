@@ -1,29 +1,45 @@
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Scanner;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
 
 public class CodeForces {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int inputSize = scanner.nextInt();
-        int[] arr = new int[inputSize];
+        int[] nums = {3,2,3};
+        Arrays.sort(nums);
+        int j =1;
+        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        for (int i = 1; i < nums.length; i++) {
+            System.out.println(nums[i]);
+            if(nums[i] == nums[i-1] && i == nums.length-1){
+                j++;
+                hashMap.put(nums[i],j);
 
-        for (int i = 0; i < inputSize; i++) {
-            arr[i] = scanner.nextInt();
+            }
+            else if(nums[i] == nums[i-1] ){
+                j++;
+                hashMap.put(nums[i],j);
+            }
+            else {
+                j=1;
+                hashMap.put(nums[i],j);
+
+            }
+            System.out.println("J");
+            System.out.println(j);
+            System.out.println();
         }
-
-        LinkedHashSet<Integer> hashMap = new LinkedHashSet<>();
-        for (int i = inputSize-1; i > 0; i--) {
-            System.out.println("forLoopIn");
-            System.out.println(arr[i]);
-            hashMap.add(arr[i]);
+        System.out.println("hashMap Print");
+        int max =1;
+        int number =1;
+        for (Integer name : hashMap.keySet()){
+            int key = name;
+            int value = hashMap.get(name);
+            System.out.println("key: " + key+" "+"value: "+value);
+            if(value>max){
+                max = value;
+                number = key;
+            }
         }
-        System.out.println("forLoopOut");
-
-        System.out.println(hashMap.size());
-
-        for (Integer integer : hashMap) {
-            System.out.println(integer);
-        }
+        System.out.println(number);
     }
 }
