@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class IntegerSet {
 
     private final boolean[] integerSet;
@@ -54,23 +56,11 @@ public class IntegerSet {
     }
 
     public static void main(String[] args) {
-        IntegerSet integerSet = new IntegerSet();
-        IntegerSet integerSet1 = new IntegerSet();
+        int[] a = {1,2,3,4};
+        int[] b = a;
+        a[0] = 4;
 
-        integerSet.insertElement(5);
-        integerSet.insertElement(10);
-        integerSet.insertElement(20);
-        integerSet1.insertElement(10);
-        integerSet1.insertElement(15);
-        integerSet1.insertElement(20);
+        System.out.println(Arrays.toString(b));
 
-        System.out.println("Set 1: " + integerSet);
-        System.out.println("Set 2: " + integerSet1);
-        IntegerSet unionSet = IntegerSet.union(integerSet, integerSet1);
-        System.out.println("Union of integerSet and integerSet1: " + unionSet);
-
-        IntegerSet intersectionSet = IntegerSet.intersection(integerSet, integerSet1);
-        System.out.println("Intersection of integerSet and integerSet1: " + intersectionSet);
-        System.out.println("Is integerSet equal to integerSet1? " + integerSet.isEqualTo(integerSet1));
     }
 }
