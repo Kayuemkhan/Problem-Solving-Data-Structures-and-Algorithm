@@ -1,5 +1,8 @@
 package oj_solve.leetcode;
 
+import java.util.HashMap;
+import java.util.Iterator;
+
 public class SetMatrixZeroes_73 {
     public static void main(String[] args) {
         int[][] prevArr = {
@@ -7,22 +10,27 @@ public class SetMatrixZeroes_73 {
                 {3,4,5,2},
                 {1,3,1,5}
         };
-        int k =0,l=0;
+        HashMap<String,Integer> hashMap = new HashMap<>();
 
         for (int i = 0; i < prevArr.length; i++) {
             for (int j = 0; j < prevArr[i].length; j++) {
                 if(prevArr[i][j] == 0){
-                    k =i;
-                    l = j;
+                    hashMap.put("i",i);
+                    hashMap.put("j",j);
+
                 }
             }
         }
 
-        System.out.println("k "+k);
-        System.out.println("l "+l);
+        for(String i : hashMap.keySet()){
+            System.out.println("key: " + i + " value: " + hashMap.get(i));
+        }
+
+
+
         for (int i = 0; i < prevArr.length; i++) {
             for (int j = 0; j < prevArr[i].length; j++) {
-                if( i ==k || l ==j){
+                if( hashMap.get("i") == i|| hashMap.get("j") ==i || hashMap.get("j") == j) {
                     prevArr[i][j] = 0;
                 }
             }
