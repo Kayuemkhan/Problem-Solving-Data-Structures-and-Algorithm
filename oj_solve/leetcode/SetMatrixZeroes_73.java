@@ -21,16 +21,6 @@ public class SetMatrixZeroes_73 {
                 }
             }
         }
-        Iterator<Integer> itr = rows.iterator();
-        Iterator<Integer> itr2 = cols.iterator();
-
-
-//        while (itr.hasNext()) {
-//            System.out.println(itr.next());
-//        }
-        while (itr2.hasNext()) {
-            System.out.println(itr2.next());
-        }
 
         for (int i = 0; i < prevArr.length; i++) {
             for (int j = 0; j < prevArr[i].length; j++) {
@@ -40,12 +30,12 @@ public class SetMatrixZeroes_73 {
             }
         }
 
-//        for (int i = 0; i < prevArr.length; i++) {
-//            for (int j = 0; j < prevArr[i].length; j++) {
-//                System.out.print(prevArr[i][j]+" ");
-//            }
-//            System.out.println();
-//        }
+        for (int i = 0; i < prevArr.length; i++) {
+            for (int j = 0; j < prevArr[i].length; j++) {
+                System.out.print(prevArr[i][j]+" ");
+            }
+            System.out.println();
+        }
 
     }
 }
