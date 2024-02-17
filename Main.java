@@ -11,11 +11,13 @@ public class Main {
         int max =0;
         Set<Integer> cols = new HashSet<>();
 
+
+
+
         for (int i = 0; i < multiArr.length; i++) {
             for (int j = 0; j < multiArr[i].length; j++) {
                 if(multiArr[i][j] == -1){
                     cols.add(j);
-
                 }
 
                 if(multiArr[i][j] > max){
@@ -26,6 +28,7 @@ public class Main {
 
         for (int i = 0; i < multiArr.length; i++) {
             for (int j = 0; j < multiArr[i].length; j++) {
+
                 if (cols.contains(j) && multiArr[i][j] ==-1) {
                     multiArr[i][j] = max;
                 }
