@@ -3,13 +3,14 @@ package interview.top_50_data_structure_Algorithms_and_coding_interview_question
 public class DuplicateStringChecker {
 
     public static boolean bruteforce(String[] input) {
-        for (int i = 0; i < input.length; i++) {
-            for (int j = 0; j < input.length; j++) {
-                if (i != j && input[i].equals(input[j])) {
-                    return true;
-                }
+        int j =0;
+        for (String s : input) {
+            if (s.equals(input[j])) {
+                return true;
             }
+
         }
+
         return false;
     }
 
