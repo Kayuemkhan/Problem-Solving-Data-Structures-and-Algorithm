@@ -7,9 +7,17 @@ fun main() {
 //    calculateBMI(100, 68) eq "Underweight"
 //    calculateBMI(200, 68) eq "Overweight"
 
-    val result = 10.add(5)  // equivalent to 10.add(5)
-    println(result) //
+//    val result = 10.add(5)  // equivalent to 10.add(5)
+//    println(result) //
+//
+//    val ints = listOf(99, 3, 5, 7, 11, 13)
+//    ints eq "[99, 3, 5, 7, 11, 13]"
+//
+    val list = listOf(1,2,3,4)
 
+    for ( i in 10 downTo 0){
+        println(i)
+    }
 
 }
 

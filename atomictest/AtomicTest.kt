@@ -1,6 +1,8 @@
 package atomictest
+
 import kotlin.math.abs
 import kotlin.reflect.KClass
+
 const val ERROR_TAG = "[Error]: "
 private fun <L, R> test(
     actual: L,
@@ -8,17 +10,17 @@ private fun <L, R> test(
     checkEquals: Boolean = true,
     predicate: () -> Boolean
 ) {
-    println("actual")
-    println(actual)
-    println("expected")
-    println(expected)
+
     if (!predicate()) {
         print(ERROR_TAG)
-        println("$actual " +
-                (if (checkEquals) "!=" else "==") +
-                " $expected")
+        println(
+            "$actual " +
+                    (if (checkEquals) "!=" else "==") +
+                    " $expected"
+        )
     }
 }
+
 /**
  * Compares the string representation
  * of this object with the string `rval`.
@@ -28,6 +30,7 @@ infix fun Any.eq(rval: String) {
         toString().trim() == rval.trimIndent()
     }
 }
+
 /**
  * Verifies this object is equal to `rval`.
  */
@@ -36,6 +39,7 @@ infix fun <T> T.eq(rval: T) {
         this == rval
     }
 }
+
 /**
  * Verifies this object is != `rval`.
  */
@@ -44,6 +48,7 @@ infix fun <T> T.neq(rval: T) {
         this != rval
     }
 }
+
 /**
  * Verifies that a `Double` number is equal
  * to `rval` within a positive delta.
@@ -53,6 +58,7 @@ infix fun Double.eq(rval: Double) {
         abs(this - rval) < 0.0000001
     }
 }
+
 /**
  * Holds captured exception information:
  */
@@ -66,9 +72,11 @@ class CapturedException(
                 exceptionClass?.simpleName ?: ""
             return className + actualMessage
         }
+
     infix fun eq(message: String) {
         fullMessage eq message
     }
+
     infix fun contains(parts: List<String>) {
         if (parts.any { it !in fullMessage }) {
             print(ERROR_TAG)
@@ -76,8 +84,10 @@ class CapturedException(
             println("Expected parts: $parts")
         }
     }
+
     override fun toString() = fullMessage
 }
+
 /**
  * Captures an exception and produces
  * information about it. Usage:
@@ -85,15 +95,18 @@ class CapturedException(
  * // Code that fails
  * } eq "FailureException: message"
  */
-fun capture(f:() -> Unit): CapturedException =
+fun capture(f: () -> Unit): CapturedException =
     try {
         f()
-        CapturedException(null,
-            "$ERROR_TAG Expected an exception")
+        CapturedException(
+            null,
+            "$ERROR_TAG Expected an exception"
+        )
     } catch (e: Throwable) {
         CapturedException(e::class,
             (e.message?.let { ": $it" } ?: ""))
     }
+
 /**
  * Accumulates output when called as in:
  * trace("info")
@@ -106,6 +119,7 @@ object trace {
     operator fun invoke(obj: Any?) {
         trc += obj.toString()
     }
+
     /**
      * Compares trc contents to a multiline
      * `String` by ignoring white space.
