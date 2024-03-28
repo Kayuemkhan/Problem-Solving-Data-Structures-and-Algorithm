@@ -15,8 +15,10 @@
     2. The implementation of Algorithms.
 
     Design -> Problem solving & mathematical thinking
+<br>
 
     Implementation -> Write codes to implement the logics.
+<br>
 
     Complexity analysis is defined as a technique to characterise the time taken by an 
     algorithm with respect to input size (independent from the machine, language and compiler). 
@@ -25,7 +27,8 @@
 <br>
 
     What is the need for Complexity Analysis?
-    1. Complexity Analysis determines the amount of time and space resources required to execute it.
+    1. Complexity Analysis determines the amount of time and space resources required 
+    to execute it.
     2. It is used for comparing different algorithms on different input sizes.
     3. Complexity helps to determine the difficulty of a problem.
     often measured by how much time and space (memory) it takes to solve a particular problem
