@@ -465,5 +465,56 @@ Auxiliary Space is the extra space or temporary space used by an algorithm.
 
 <i>The space Complexity of an algorithm is the total space taken by the algorithm with respect to the input size. Space complexity includes both Auxiliary space and space used by input.</i>
 
+For example, if we want to compare standard sorting algorithms on the basis of space, then Auxiliary Space would be a better criterion than Space Complexity. Merge Sort uses O(n) auxiliary space, Insertion sort, and Heap Sort use O(1) auxiliary space. The space complexity of all these sorting algorithms is O(n) though.
+
+<strong>In recursive calls stack space also counts.</strong>
+
+int add (int n){
+if (n <= 0){
+return 0;
+}
+return n + add (n-1);
+}
+
+Here each call add a level to the stack :
+
+    1.  add(4)
+    2.    -> add(3)
+    3.      -> add(2)
+    4.        -> add(1)
+    5.          -> add(0)
+    Each of these calls is added to call stack and takes up actual memory.
+    So it takes O(n) space.
+
+<strong>However, just because you have n calls total doesn’t mean it takes O(n) space.</strong>
+
+
+    int addSequence (int n){
+    int sum = 0;
+    for (int i = 0; i < n; i++){
+    sum += pairSum(i, i+1);
+    }
+    return sum;
+    }
+
+    int pairSum(int x, int y){
+    return x + y;
+    }
+
+    There will be roughly O(n) calls to pairSum. However, those
+    calls do not exist simultaneously on the call stack,
+    so you only need O(1) space.
+
+
+<strong> Factors Affecting Long-term Usage of an Algorithm </strong>
+The following are the factors that are crucial to an algorithm's long-term effectiveness:
+
+<strong>Efficiency</strong> —  Efficiency plays a key role in developing a successful algorithm. Efficiency is what minimizes computation durations and delivers swift results.
+
+<strong>Finiteness</strong> – The algorithm must conclude a predetermined number of steps. Otherwise, it will consume more RAM and is not recommended. If it continues through infinite loops or recursion, stack overflow and out-of-bounds problems may happen.
+
+<strong>Correctness</strong> – Regardless of the magnitude of the input given, a good algorithm should generate a proper result.
+
+
 </body>
 </html>
