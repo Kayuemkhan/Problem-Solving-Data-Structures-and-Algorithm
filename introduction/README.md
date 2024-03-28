@@ -119,10 +119,12 @@ When an algorithm has a constant order of growth, it means that it always takes 
 
 </table>
 </div>
+<strong> <i>Even if the list grows to be a million items long, that operation will always require a single step.</i> </strong>
 
+<strong>Graphical View</strong>
 
+<img src="https://i.imgur.com/pZezyrD.png" >
 
-Even if the list grows to be a million items long, that operation will always require a single step.
 
 <h2> Logarithmic time </h2>
 When an algorithm has a logarithmic order of growth, it increases proportionally to the logarithm of the input size.
@@ -156,6 +158,9 @@ The algorithm uses a loop to look at multiple items in the list, but crucially, 
 
 </table>
 </div>
+
+
+<img src="https://i.imgur.com/vIUXNHS.png" >
 
 
 <h2> Linear Time </h2>
@@ -193,6 +198,8 @@ The aptly-named linear search algorithm runs in linear time.
 
 This time, the loop looks at every item in the list. This exhaustive search is necessary to search for items in an unsorted list, since there's no way to narrow down where a particular item might be. This algorithm will always require at least as many steps as items in the list.
 
+<img src="https://i.imgur.com/nl9Cvez.png">
+
 <h1>Quadratic time</h1>
 When an algorithm has a quadratic order of growth, its steps increase in proportion to the input size squared.
 
@@ -227,5 +234,13 @@ When an algorithm has a quadratic order of growth, its steps increase in proport
 
 </table>
 </div>
+
+<img src="https://i.imgur.com/S46rX16.png">
+
+<strong>All together now </strong>
+
+<img src="https://i.imgur.com/8psl4kk.png" alt="img">
+
+<strong > N.B. :Data & Pictures collected from <a href="https://cs61a.org/study-guide/orders-of-growth/" >Link</a> </strong>
 </body>
 </html>
