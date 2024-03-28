@@ -245,5 +245,225 @@ When an algorithm has a quadratic order of growth, its steps increase in proport
 <img src="https://i.imgur.com/8psl4kk.png" alt="img">
 
 <strong > N.B. :Data & Pictures collected from <a href="https://cs61a.org/study-guide/orders-of-growth/" >Link</a> </strong>
+
+<h2>Asymptotic Notation and Analysis (Based on input size) in Complexity Analysis of Algorithms </h2>
+Asymptotic Analysis is defined as the big idea that handles the above issues in analyzing algorithms. In Asymptotic Analysis, we evaluate the performance of an algorithm in terms of input size (we don’t measure the actual running time). We calculate, how the time (or space) taken by an algorithm increases with the input size.
+<br>
+
+Asymptotic notation is a way to describe the running time or space complexity of an algorithm based on the input size. It is commonly used in complexity analysis to describe how an algorithm performs as the size of the input grows. The three most commonly used notations are Big O, Omega, and Theta.
+
+<br>
+
+<strong>Big O notation (O)</strong>: This notation provides an upper bound on the growth rate of an algorithm’s running time or space usage. It represents the worst-case scenario, i.e., the maximum amount of time or space an algorithm may need to solve a problem. For example, if an algorithm’s running time is O(n), then it means that the running time of the algorithm increases linearly with the input size n or less.
+
+<strong>Omega notation (?)</strong>: This notation provides a lower bound on the growth rate of an algorithm’s running time or space usage. It represents the best-case scenario, i.e., the minimum amount of time or space an algorithm may need to solve a problem. For example, if an algorithm’s running time is ?(n), then it means that the running time of the algorithm increases linearly with the input size n or more.
+
+<strong>Theta notation (?) </strong>: This notation provides both an upper and lower bound on the growth rate of an algorithm’s running time or space usage. It represents the average-case scenario, i.e., the amount of time or space an algorithm typically needs to solve a problem. For example, if an algorithm’s running time is ?(n), then it means that the running time of the algorithm increases linearly with the input size n.
+
+long start = System.currentTimeMillis( ); // record the starting time
+/? (run the algorithm) ?/
+
+long end = System.currentTimeMillis( ); // record the ending time
+
+long elapsed = end ? start; //Total time elapsed
+
+Measuring elapsed time  provides a reasonable reflection of an algorithm’s efficiency
+
+<strong>let us say:</strong>
+
+we run the Linear Search on a fast computer A and
+Binary Search on a slow computer B and
+pick the constant values for the two computers so that it tells us exactly how long it takes for the given machine to perform the search in seconds.
+
+Let’s say the constant for A is 0.2 and the constant for B is 1000 which means that A is 5000 times more powerful than B.
+
+For small values of input array size n, the fast computer may take less time.
+
+But, after a certain value of input array size, the Binary Search will definitely start taking less time compared to the Linear Search even though the Binary Search is being run on a slow machine.
+
+<table>
+<thead>
+<tr>
+<th>Input Size</th>
+<th>Running time on A</th>
+<th>Running time on B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>10</th>
+<td>2 sec</td>
+<td>~ 1 h&nbsp;</td>
+</tr>
+<tr>
+<th>100</th>
+<td>20 sec</td>
+<td>~ 1.8 h</td>
+</tr>
+<tr>
+<th>10^6&nbsp;</th>
+<td>~ 55.5 h</td>
+<td>~ 5.5 h</td>
+</tr>
+<tr>
+<th>10^9</th>
+<td>~ 6.3 years&nbsp;</td>
+<td>~ 8.3 h</td>
+</tr>
+</tbody>
+</table>
+
+<h1>How to Analyse Loops for Complexity Analysis of Algorithms</h1>
+
+The analysis of loops for the complexity analysis of algorithms involves finding the number of operations performed by a loop as a function of the input size. This is usually done by determining the number of iterations of the loop and the number of operations performed in each iteration.
+
+<strong> Constant Time Complexity O(1):</strong>
+The time complexity of a function (or set of statements) is considered as O(1) if it doesn’t contain a loop, recursion, and call to any other non-constant time function. 
+ i.e. set of non-recursive and non-loop statements
+
+Example:
+
+swap() function has O(1) time complexity.
+
+A loop or recursion that runs a constant number of times is also considered O(1). For example, the following loop is O(1).
+
+// Here c is a constant
+
+    for (int i = 1; i <= c; i++) {
+        // some O(1) expressions
+    }
+
+<strong>Linear Time Complexity O(n):</strong>
+
+The Time Complexity of a loop is considered as O(n) if the loop variables are incremented/decremented by a constant amount. For example following functions have O(n) time complexity. Linear time complexity, denoted as O(n), is a measure of the growth of the running time of an algorithm proportional to the size of the input.
+    
+    // Here c is a positive integer constant
+    for (int i = 1; i <= n; i += c) {
+    // some O(1) expressions
+    }
+
+    for (int i = n; i > 0; i -= c) {
+    // some O(1) expressions
+    }
+
+<strong><span>Quadratic Time Complexity O(n</span><sup><span>c</span></sup><span>):</span></strong>
+The time complexity is defined as an algorithm whose performance is directly proportional to the squared size of the input data, as in nested loops it is equal to the number of times the innermost statement is executed. For example, the following sample loops have O(n2) time complexity
+
+
+    for (int i = 1; i <= n; i += c) {
+    for (int j = 1; j <= n; j += c) {
+    // some O(1) expressions
+    }
+    }
+
+    for (int i = n; i > 0; i -= c) {
+    for (int j = i + 1; j <= n; j += c) {
+    // some O(1) expressions
+    }
+    }
+
+
+<strong>Logarithmic Time Complexity O(Log n):</strong>
+
+The time Complexity of a loop is considered as O(Logn) if the loop variables are divided/multiplied by a constant amount. And also for recursive calls in the recursive function, the Time Complexity is considered as O(Logn).
+
+    for (int i = 1; i <= n; i *= c) {
+    // some O(1) expressions
+    }
+    for (int i = n; i > 0; i /= c) {
+    // some O(1) expressions
+    }
+
+<strong>Logarithmic Time Complexity O(Log Log n):</strong>
+
+    // Here c is a constant greater than 1
+    for (int i = 2; i <= n; i = Math.pow(i, c)) {
+    // some O(1) expressions
+    }
+    // Here fun is sqrt or cuberoot or any other constant root
+    for (int i = n; i > 1; i = fun(i)) {
+    // some O(1) expressions
+    }
+
+<h4>Algorithimic CheatSheet </h4>
+
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td style="width: 175px"><b><strong>Algorithm</strong></b></td>
+<td style="width: 175px"><b><strong>Best Case</strong></b></td>
+<td style="width: 175px"><b><strong>Average Case</strong></b></td>
+<td style="width: 175px"><b><strong>Worst Case</strong></b></td>
+</tr>
+<tr>
+<td style="width: 175px"><span>Selection Sort</span></td>
+<td style="width: 175px"><span>O(n^2)</span></td>
+<td style="width: 175px"><span>O(n^2)</span></td>
+<td style="width: 175px"><span>O(n^2)</span></td>
+</tr>
+<tr>
+<td style="width: 175px"><span>Bubble Sort</span></td>
+<td style="width: 175px"><span>O(n)</span></td>
+<td style="width: 175px"><span>O(n^2)</span></td>
+<td style="width: 175px"><span>O(n^2)</span></td>
+</tr>
+<tr>
+<td style="width: 175px"><span>Insertion Sort</span></td>
+<td style="width: 175px"><span>O(n)</span></td>
+<td style="width: 175px"><span>O(n^2)</span></td>
+<td style="width: 175px"><span>O(n^2)</span></td>
+</tr>
+<tr>
+<td style="width: 175px"><span>Tree Sort</span></td>
+<td style="width: 175px"><span>O(nlogn)</span></td>
+<td style="width: 175px"><span>O(nlogn)</span></td>
+<td style="width: 175px"><span>O(n^2)</span></td>
+</tr>
+<tr>
+<td style="width: 175px"><span>Radix Sort</span></td>
+<td style="width: 175px"><span>O(dn)</span></td>
+<td style="width: 175px"><span>O(dn)</span></td>
+<td style="width: 175px"><span>O(dn)</span></td>
+</tr>
+<tr>
+<td style="width: 175px"><span>Merge Sort</span></td>
+<td style="width: 175px"><span>O(nlogn)</span></td>
+<td style="width: 175px"><span>O(nlogn)</span></td>
+<td style="width: 175px"><span>O(nlogn)</span></td>
+</tr>
+<tr>
+<td style="width: 175px"><span>Heap Sort</span></td>
+<td style="width: 175px"><span>O(nlogn)</span></td>
+<td style="width: 175px"><span>O(nlogn)</span></td>
+<td style="width: 175px"><span>O(nlogn)</span></td>
+</tr>
+<tr>
+<td style="width: 175px"><span>Quick Sort</span></td>
+<td style="width: 175px"><span>O(nlogn)</span></td>
+<td style="width: 175px"><span>O(nlogn)</span></td>
+<td style="width: 175px"><span>O(n^2)</span></td>
+</tr>
+<tr>
+<td style="width: 175px"><span>Bucket Sort</span></td>
+<td style="width: 175px"><span>O(n+k)</span></td>
+<td style="width: 175px"><span>O(n+k)</span></td>
+<td style="width: 175px"><span>O(n^2)</span></td>
+</tr>
+<tr>
+<td style="width: 175px"><span>Counting Sort</span></td>
+<td style="width: 175px"><span>O(n+k)</span></td>
+<td style="width: 175px"><span>O(n+k)</span></td>
+<td style="width: 175px"><span>O(n+k)</span></td>
+</tr>
+</tbody>
+</table>
+
+<h1>Space Complexity</h1>
+
+Auxiliary Space is the extra space or temporary space used by an algorithm.
+
+<i>The space Complexity of an algorithm is the total space taken by the algorithm with respect to the input size. Space complexity includes both Auxiliary space and space used by input.</i>
+
 </body>
 </html>
