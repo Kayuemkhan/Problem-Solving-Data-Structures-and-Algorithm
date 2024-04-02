@@ -1,6 +1,7 @@
 package algorithms.basic.hashmap;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class DesignHashMap {
     public static void main(String[] args) {
@@ -37,6 +38,10 @@ public class DesignHashMap {
         for (Integer i : hashMap.keySet()) {
             System.out.println("key: " + i + " contains value: " + hashMap.get(i));
         }
+
+        for (Map.Entry<Integer, Integer> e : hashMap.entrySet())
+            System.out.println("Key: " + e.getKey()
+                    + " Value: " + e.getValue());
 
     }
 }
