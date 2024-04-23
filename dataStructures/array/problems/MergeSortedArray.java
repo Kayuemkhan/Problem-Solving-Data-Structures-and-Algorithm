@@ -1,4 +1,4 @@
-package dataStructures.array;
+package dataStructures.array.problems;
 /*
 Merge Sorted Array
 Solution

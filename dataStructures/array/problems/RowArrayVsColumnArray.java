@@ -1,4 +1,4 @@
-package dataStructures.array;
+package dataStructures.array.problems;
 
 import java.time.Duration;
 import java.time.Instant;
