@@ -1,4 +1,4 @@
-> <h1> Hash Map Basics </h1>
+> <h1> Strings </h1>
 
 <!DOCTYPE html>
 <html lang="en">
