@@ -1,4 +1,4 @@
-package algorithms.basic.hashmap;
+package dataStructures.hashmap;
 
 import java.util.HashMap;
 
@@ -48,6 +48,8 @@ public class DesignHashMap {
         for (Integer key: hashMap.keySet()){
             System.out.println(key.hashCode() % 10 + "\t" + key + "\t" + hashMap.get(key));
         }
+
+
 
     }
 }
