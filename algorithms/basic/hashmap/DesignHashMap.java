@@ -1,15 +1,16 @@
 package algorithms.basic.hashmap;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class DesignHashMap {
     public static void main(String[] args) {
-        HashMap<Integer,Integer> hashMap = new HashMap<>();
+        HashMap<Integer,String> hashMap = new HashMap<>();
 
-        hashMap.put(1,10);
-        hashMap.put(2,20);
-        hashMap.put(3,30);
+        hashMap.put(1,"Abdul");
+        hashMap.put(2,"Baten");
+        hashMap.put(3,"Asib");
+        hashMap.put(4,"Shuvo");
+        hashMap.put(5,"Sahabul");
 
         //print HashMap
         System.out.println(hashMap);
@@ -30,7 +31,7 @@ public class DesignHashMap {
         System.out.println("Printing Values:");
 
         // Print values
-        for (Integer i : hashMap.values()) {
+        for (String i : hashMap.values()) {
             System.out.println(i);
         }
 
@@ -39,9 +40,14 @@ public class DesignHashMap {
             System.out.println("key: " + i + " contains value: " + hashMap.get(i));
         }
 
-        for (Map.Entry<Integer, Integer> e : hashMap.entrySet())
-            System.out.println("Key: " + e.getKey()
-                    + " Value: " + e.getValue());
+
+        //printing everything together:
+
+        System.out.println("Printing Everything");
+
+        for (Integer key: hashMap.keySet()){
+            System.out.println(key.hashCode() % 10 + "\t" + key + "\t" + hashMap.get(key));
+        }
 
     }
 }
