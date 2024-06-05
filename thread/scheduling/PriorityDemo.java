@@ -6,7 +6,7 @@ public class PriorityDemo {
         Runnable task = () -> {
             System.out.println(Thread.currentThread().getName() + " started with priority " + Thread.currentThread().getPriority());
             try {
-                Thread.sleep(1000);
+                Thread.sleep((long) (Math.random() * 100));
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
@@ -17,7 +17,7 @@ public class PriorityDemo {
 
         for (int i = 0; i < 10; i++) {
             threads[i] = new Thread(task, "Thread-" + i);
-            threads[i].setPriority(i + 1); // Set priorities from 1 to 10
+            threads[i].setPriority(i + 1);
         }
 
         for (Thread thread : threads) {
