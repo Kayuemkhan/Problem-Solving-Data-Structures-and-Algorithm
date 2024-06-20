@@ -56,6 +56,21 @@ This operator is a unary operator, denoted by ‘~.’ It returns the one’s co
     ________
     1010  = 10 (In decimal)
 
-    
+
+
+
+<b>Advantages</b>
+
+The advantages of using Bitwise Operators in Java are:
+
+Speed: Bitwise operations are much faster than arithmetic operations as they operate directly on binary representations of numbers.
+
+Space Optimization: Bitwise operations can be used to store multiple values in a single variable, which can be useful when working with limited memory.
+
+Bit Manipulation: Bitwise operators allow for precise control over individual bits of a number, which can be useful in various applications such as cryptography, error detection, and compression.
+
+Code Simplification: Bitwise operations can simplify the code by reducing the number of conditional statements and loops required to perform certain tasks.
+
+In summary, Bitwise Operators are an important tool for optimizing performance, improving code readability, and reducing code complexity in Java applications.
 </body>
 </html>
