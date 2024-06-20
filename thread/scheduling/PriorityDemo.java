@@ -4,7 +4,10 @@ public class PriorityDemo {
 
     public static void main(String[] args) {
         Runnable task = () -> {
-            System.out.println(Thread.currentThread().getName() + " started with priority " + Thread.currentThread().getPriority());
+            System.out.println(
+                    Thread.currentThread().getName() +
+                    " started with priority " + Thread.currentThread().getPriority()
+            );
             try {
                 Thread.sleep((long) (Math.random() * 100));
             } catch (InterruptedException e) {
