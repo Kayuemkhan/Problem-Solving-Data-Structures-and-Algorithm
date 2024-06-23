@@ -35,15 +35,10 @@ public class OperatorsLogicalOpeartors {
         System.out.println("~a & b|a&~b= "+binary[f]);
         System.out.println("~a= "+binary[g]);
 
+        System.out.println(64 & 1 );
 
-        char hex[]={
-                '0','1','2','3','4','5',
-                '6','7','8','9','a','b','c',
-                'd','e','f'
-        };
 
-        byte bs=(byte) 0xf1;
 
-        System.out.println("b = 0x" + hex [(bs>>4) & 0x0f] + hex[bs & 0x0f]);
+
     }
 }

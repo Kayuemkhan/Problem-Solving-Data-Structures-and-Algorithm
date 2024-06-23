@@ -72,5 +72,9 @@ Bit Manipulation: Bitwise operators allow for precise control over individual bi
 Code Simplification: Bitwise operations can simplify the code by reducing the number of conditional statements and loops required to perform certain tasks.
 
 In summary, Bitwise Operators are an important tool for optimizing performance, improving code readability, and reducing code complexity in Java applications.
+
+<br>
+<br>
+<h3> Left Shift and Right Shift Operators</h3>
 </body>
 </html>
