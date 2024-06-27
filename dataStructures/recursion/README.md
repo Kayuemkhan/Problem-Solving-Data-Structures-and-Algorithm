@@ -20,8 +20,9 @@ is called a recursive function.
 
 <i> Two Things in recursive call </i>
  <ul>
-    <li>Base Call</li>
-    <li>Recursive Call</li>
+    <li><strong>Hypothesis </strong> : The function which will be recursive for a condition. like Solve ( n ) -> 1-n </li>
+    <li><strong>Induction:</strong> How we print the value . </li>
+    <li><strong>Base Condition:</strong> Smallest valid input where the recursion will stop</li>
 </ul>
     int fact(int n)
     {
