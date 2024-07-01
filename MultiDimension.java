@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class MultiDimension {
 
     public static void main(String[] args) {
@@ -22,9 +19,14 @@ public class MultiDimension {
 //            System.out.println();
 //            System.out.println(row);
 //        }
+
+
         char[] arr = {'h','e','l','l','o'};
 
         swapping(arr);
+
+
+
     }
 
     private static void swapping(char[] arr) {

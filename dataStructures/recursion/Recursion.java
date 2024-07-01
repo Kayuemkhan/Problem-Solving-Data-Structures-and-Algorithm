@@ -7,15 +7,19 @@ public class Recursion {
         printNToOne(s);
     }
 
-    private static String[] printNToOne(String[] str) {
+    private static void printNToOne(String[] str) {
         int n = 5;
         int i=0;
         int j =str.length-1;
 
-        if(i==j) return str;
-        else {
-            System.out.println(i);
+        if(i != j) {
+            printNToOne(str); ;
         }
-        return str;
+        else {
+            System.out.println(str[i]);
+        }
+
+        i++;
+
     }
 }
