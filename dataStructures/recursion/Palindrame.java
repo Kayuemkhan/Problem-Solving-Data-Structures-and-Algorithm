@@ -10,6 +10,7 @@ public class Palindrame {
         else {
             System.out.println("Nooooooooooo");
         }
+        System.out.println(checkPalindrame(input));
     }
 
     private static String checkPalindrame(String str) {
