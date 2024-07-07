@@ -8,8 +8,11 @@ public class FibonacciWithoutRecursion {
         int c =0;
         for (int i = 2; i < n; i++) {
             c = a+b;
+            System.out.println(c);
             a =b;
+            System.out.println(a);
             b =c;
+            System.out.println(b);
         }
 
         System.out.println("nth Fibonacci = "+b);
