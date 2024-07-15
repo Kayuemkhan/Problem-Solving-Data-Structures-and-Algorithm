@@ -86,7 +86,8 @@ indirect recursion has been illustrated in Table 1.
     }
 
 <b>How memory is allocated to different function calls in recursion?</b>
-<br>
+
+
 When any function is called from main(), the memory is allocated to it on the <b>stack</b>. A recursive function calls
 itself, the memory for a called function is allocated on top of memory allocated to the calling function and a different
 copy of local variables is created for each function call. When the base case is reached, the function returns its value
