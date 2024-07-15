@@ -102,7 +102,6 @@ Let us take the example of how recursion works by taking a simple function.
     else {
         System.out.printf("%d ", test);
         printFun(test - 1); // statement 2
-        System.out.printf("%d ", test);
         return;
     } }
 
@@ -115,7 +114,7 @@ Let us take the example of how recursion works by taking a simple function.
 
 <b> Output</b>
 
-    3 2 1 1 2 3 
+    3 2 1 
 
 Time Complexity: O(1)
 <br>
