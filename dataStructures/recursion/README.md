@@ -27,6 +27,7 @@ is called a recursive function.
     
     int fact(int n)
     {
+
     if (n < = 1) // base case
     return 1;
     else    
