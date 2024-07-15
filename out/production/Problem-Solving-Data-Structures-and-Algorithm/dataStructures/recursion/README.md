@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Strings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -24,13 +24,14 @@ is called a recursive function.
     <li><strong>Induction:</strong> How we print the value . </li>
     <li><strong>Base Condition:</strong> Smallest valid input where the recursion will stop</li>
 </ul>
+    
     int fact(int n)
     {
 
-    if (n < = 1) // base case
-    return 1;
-    else    
-    return n*fact(n-1);    
+        if (n < = 1) // base case
+        return 1;
+        else    
+        return n * fact(n-1) ;    
 
     }
 
@@ -41,13 +42,13 @@ understand this.
 
     int fact(int n)
     {
-    // wrong base case (it may cause
-    // stack overflow).
-    if (n == 100)
-    return 1;
-
-    else
-        return n*fact(n-1);
+        // wrong base case (it may cause
+        // stack overflow).
+        if (n == 100)
+        return 1;
+    
+        else
+            return n*fact(n-1);
     }
 
 <b>What is the difference between direct and indirect recursion?</b>
@@ -59,33 +60,34 @@ indirect recursion has been illustrated in Table 1.
     // An example of direct recursion
     void directRecFun()
     {
-    // Some code....
-
-    directRecFun();
-
-    // Some code...
+        // Some code....
+    
+        directRecFun();
+    
+        // Some code...
     }
 
     // An example of indirect recursion
     void indirectRecFun1()
     {
-    // Some code...
-
-    indirectRecFun2();
-
-    // Some code...
+        // Some code...
+    
+        indirectRecFun2();
+    
+        // Some code...
     }
     void indirectRecFun2()
     {
-    // Some code...
-
-    indirectRecFun1();
-
-    // Some code...
+        // Some code...
+    
+        indirectRecFun1();
+    
+        // Some code...
     }
 
 <b>How memory is allocated to different function calls in recursion?</b>
-<br>
+
+
 When any function is called from main(), the memory is allocated to it on the <b>stack</b>. A recursive function calls
 itself, the memory for a called function is allocated on top of memory allocated to the calling function and a different
 copy of local variables is created for each function call. When the base case is reached, the function returns its value
@@ -96,12 +98,12 @@ Let us take the example of how recursion works by taking a simple function.
     static void printFun(int test)
     {
     if (test < 1)
-    return;
+        return;
     else {
-    System.out.printf("%d ", test);
-    printFun(test - 1); // statement 2
-    System.out.printf("%d ", test);
-    return;
+        System.out.printf("%d ", test);
+        printFun(test - 1); // statement 2
+        System.out.printf("%d ", test);
+        return;
     } }
 
 	// Driver Code 
