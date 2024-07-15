@@ -42,13 +42,13 @@ understand this.
 
     int fact(int n)
     {
-    // wrong base case (it may cause
-    // stack overflow).
-    if (n == 100)
-    return 1;
-
-    else
-        return n*fact(n-1);
+        // wrong base case (it may cause
+        // stack overflow).
+        if (n == 100)
+        return 1;
+    
+        else
+            return n*fact(n-1);
     }
 
 <b>What is the difference between direct and indirect recursion?</b>
@@ -60,29 +60,29 @@ indirect recursion has been illustrated in Table 1.
     // An example of direct recursion
     void directRecFun()
     {
-    // Some code....
-
-    directRecFun();
-
-    // Some code...
+        // Some code....
+    
+        directRecFun();
+    
+        // Some code...
     }
 
     // An example of indirect recursion
     void indirectRecFun1()
     {
-    // Some code...
-
-    indirectRecFun2();
-
-    // Some code...
+        // Some code...
+    
+        indirectRecFun2();
+    
+        // Some code...
     }
     void indirectRecFun2()
     {
-    // Some code...
-
-    indirectRecFun1();
-
-    // Some code...
+        // Some code...
+    
+        indirectRecFun1();
+    
+        // Some code...
     }
 
 <b>How memory is allocated to different function calls in recursion?</b>
@@ -97,12 +97,12 @@ Let us take the example of how recursion works by taking a simple function.
     static void printFun(int test)
     {
     if (test < 1)
-    return;
+        return;
     else {
-    System.out.printf("%d ", test);
-    printFun(test - 1); // statement 2
-    System.out.printf("%d ", test);
-    return;
+        System.out.printf("%d ", test);
+        printFun(test - 1); // statement 2
+        System.out.printf("%d ", test);
+        return;
     } }
 
 	// Driver Code 
