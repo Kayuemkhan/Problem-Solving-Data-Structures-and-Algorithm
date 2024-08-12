@@ -6,7 +6,6 @@ public class ArrayStack < E > {
     public static final int CAPACITY = 1000; // default array capacity
     private int topIndex; // index of the top element in the stack
     private E[] data; // generic array used for storage
-    
 
     public ArrayStack() {
         this(CAPACITY);
@@ -26,7 +25,9 @@ public class ArrayStack < E > {
     }
 
     public void push(E e) throws IllegalStateException {
-        if (size() == data.length) throw new IllegalStateException("Stack is full");
+        if (size() == data.length)
+            throw new IllegalStateException("Stack is full");
+
         data[++topIndex] = e; // increment topIndex before storing new item
     }
 
@@ -43,7 +44,7 @@ public class ArrayStack < E > {
         return answer;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         ArrayStack < Integer > mystack = new ArrayStack<>();
         mystack.push(9); //a
         mystack.push(3); //b    
