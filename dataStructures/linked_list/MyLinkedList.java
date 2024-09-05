@@ -4,7 +4,7 @@ class MyLinkedList {
 
     Node root;
 
-    class Node {
+    static class Node {
         int val;
         Node next;
         public Node(int value) {
