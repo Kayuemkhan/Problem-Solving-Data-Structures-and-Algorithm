@@ -25,9 +25,11 @@ public class LinkedListOperations {
         }
 
         public void append(int new_data) {
-    /* 1. Allocate the Node &
-       2. Put in the data
-       3. Set next as null */
+
+            /*
+            1. Allocate the Node &
+            2. Put in the data
+            3. Set next as null */
             Node new_node = new Node(new_data);
 
     /* 4. If the Linked List is empty, then make the
