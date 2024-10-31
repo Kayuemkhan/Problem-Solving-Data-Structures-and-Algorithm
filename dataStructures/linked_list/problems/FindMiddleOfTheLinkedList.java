@@ -4,7 +4,6 @@ public class FindMiddleOfTheLinkedList {
     static class Node {
         int data;
         Node next;
-
         // Constructor to initialize a new node with data
         Node(int x) {
             this.data = x;
@@ -47,7 +46,6 @@ public class FindMiddleOfTheLinkedList {
             length++;
             head = head.next;
         }
-
 
         return length;
     }
