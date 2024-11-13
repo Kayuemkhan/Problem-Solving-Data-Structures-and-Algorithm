@@ -2,24 +2,19 @@ package algorithms.dataStructures.recursion;
 
 public class Recursion {
     public static void main(String[] args) {
-       String[] s = {"h","e","l","l","o"};
-
-        printNToOne(s);
-    }
-
-    private static void printNToOne(String[] str) {
-        int n = 5;
-        int i=0;
-        int j =str.length-1;
-
-        if(i != j) {
-            printNToOne(str); ;
-        }
-        else {
-            System.out.println(str[i]);
-        }
-
-        i++;
+       int a =10;
+       printNum(a);
 
     }
+
+    private static int printNum(int a) {
+        System.out.println(a);
+
+        if(a<2)
+            return a;
+        else
+            return printNum(a-1);
+    }
+
+
 }

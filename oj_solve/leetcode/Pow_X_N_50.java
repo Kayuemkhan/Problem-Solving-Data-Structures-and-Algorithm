@@ -22,6 +22,10 @@ public class Pow_X_N_50 {
     public static void main(String[] args) {
         double x = 34.00515;
         int n = -3;
+
+        int sqrt = (int) Math.sqrt(8);
+        System.out.println(sqrt);
+
 //        System.out.println(countPow(x,n));
         System.out.println(myPow(x, n));
     }

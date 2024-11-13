@@ -1,37 +1,19 @@
 package algorithms.dataStructures.recursion.PowerOfNumbers;
 
-//public class Solution {
-//    public static void main(String[] args) {
-//        int n=2,r =2;
-//        power(n,r);
-//    }
-//
-//    private static long power(int n, int r) {
-//
-//
-//        return 9;
-//    }
-//}
-
 public class Solution {
     public static void main(String[] args) {
-        print1(1);
+        int n = 5;
+        int[] arr = {1, 5, 7, 8, 9};
+        printArray(n, arr);
 
     }
 
-    private static void print1(int n) {
-        System.out.println(n);
-        print2(n+1);
+    private static void printArray(int n, int[] arr) {
+        if (n / 2 + 1 == n)
+            return;
+        else {
+            System.out.println(arr[arr.length - n] + " " + arr[n - 1]);
+            printArray(n - 1, arr);
+        }
     }
-
-    private static void print2(int n) {
-        System.out.println(n);
-        print3(n+1);
-    }
-
-    private static void print3(int i) {
-        System.out.println(i);
-    }
-
-
 }
