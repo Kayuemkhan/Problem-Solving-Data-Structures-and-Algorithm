@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class CountFrequencyArray {
     public static void main(String[] args) {
-        int a[] = {10,5,10,15,10,5};
+        int[] a = {10,5,10,15,10,5};
         HashMap<Integer,Integer> hashMap = new HashMap<>();
 
         for (int i = 0; i < a.length; i++) {
