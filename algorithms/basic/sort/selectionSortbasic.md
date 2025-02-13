@@ -11,7 +11,7 @@ We keep doing this until we get all elements moved to correct position.
 
 
 Complexity Analysis of Selection Sort
-Time Complexity: O(n2) ,as there are two nested loops:
+Time Complexity: <strong> O(n2) </strong> , as there are two nested loops:
 
 One loop to select an element of Array one by one = O(n)
 Another loop to compare that element with every other Array element = O(n)
