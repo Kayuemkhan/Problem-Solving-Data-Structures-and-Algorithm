@@ -10,7 +10,7 @@ We keep doing this until we get all elements moved to correct position.
 
 
 
-Complexity Analysis of Selection Sort
+Complexity Analysis of Selection Sort <br>
 Time Complexity: <strong> O(n2) </strong> , as there are two nested loops:
 
 One loop to select an element of Array one by one = O(n)
