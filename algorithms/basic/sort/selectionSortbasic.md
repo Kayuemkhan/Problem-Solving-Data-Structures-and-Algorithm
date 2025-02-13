@@ -32,7 +32,7 @@ Suitable for small lists where the overhead of more complex algorithms isn’t j
 Heap Sort algorithm is based on Selection Sort.<br>
 
 
-<h2>Frequently Asked Questions (FAQs) on Selection Sort<br> <h2>
+<h2>Frequently Asked Questions (FAQs) on Selection Sort<br> </h2>
 <br>
     
     Question 1: Is Selection Sort a stable sorting algorithm?<br>
