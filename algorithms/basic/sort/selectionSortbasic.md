@@ -18,7 +18,7 @@ Another loop to compare that element with every other Array element = O(n)<br>
 Therefore overall complexity = O(n) * O(n) = O(n*n) = O(n2)<br>
 Auxiliary Space: O(1) as the only extra memory used is for temporary variables.<br>
 
-<h3>Advantages of Selection Sort<h3><br>
+<h3>Advantages of Selection Sort</h3><br>
 Easy to understand and implement, making it ideal for teaching basic sorting concepts.<br>
 Requires only a constant O(1) extra memory space.<br>
 It requires less attempt of swaps (or memory writes) compared to many other standard algorithms. Only cycle sort beats it in terms of memory writes. Therefore it can be simple algorithm choice when memory writes are costly.<br>
@@ -39,24 +39,24 @@ Heap Sort algorithm is based on Selection Sort.<br>
     Answer: No, Selection Sort is not stable as it may change the relative order of equal elements.
 
 
-Question 2: What is the time complexity of Selection Sort?
+    Question 2: What is the time complexity of Selection Sort?
 
-Answer: Selection Sort has a time complexity of O(n^2) in the best, average, and worst cases.
-
-
-Question 3: Does Selection Sort require extra memory?
+    Answer: Selection Sort has a time complexity of O(n^2) in the best, average, and worst cases.
 
 
-Answer: No, Selection Sort is an in-place sorting algorithm and requires only O(1) additional space.
+    Question 3: Does Selection Sort require extra memory?
 
 
-Question 4: When is it best to use Selection Sort?
-
-Answer: Selection Sort is best used for small datasets, educational purposes, or when memory usage needs to be minimal.
+    Answer: No, Selection Sort is an in-place sorting algorithm and requires only O(1) additional space.
 
 
-Question 5: How does Selection Sort differ from Bubble Sort?
+    Question 4: When is it best to use Selection Sort?
 
-Answer: Selection Sort selects the minimum element and places it in the correct position with fewer swaps, while Bubble Sort repeatedly swaps adjacent elements to sort the array.
+    Answer: Selection Sort is best used for small datasets, educational purposes, or when memory usage needs to be minimal.
+
+
+    Question 5: How does Selection Sort differ from Bubble Sort?
+
+    Answer: Selection Sort selects the minimum element and places it in the correct position with fewer swaps, while Bubble Sort repeatedly swaps adjacent elements to sort the array.
 
 
