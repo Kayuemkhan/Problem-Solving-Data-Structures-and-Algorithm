@@ -18,7 +18,7 @@ Another loop to compare that element with every other Array element = O(n)
 Therefore overall complexity = O(n) * O(n) = O(n*n) = O(n2)
 Auxiliary Space: O(1) as the only extra memory used is for temporary variables.
 
-Advantages of Selection Sort
+Advantages of Selection Sort<br>
 Easy to understand and implement, making it ideal for teaching basic sorting concepts.
 Requires only a constant O(1) extra memory space.
 It requires less attempt of swaps (or memory writes) compared to many other standard algorithms. Only cycle sort beats it in terms of memory writes. Therefore it can be simple algorithm choice when memory writes are costly.
