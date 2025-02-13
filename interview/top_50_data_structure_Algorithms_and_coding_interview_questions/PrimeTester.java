@@ -1,15 +1,10 @@
 package interview.top_50_data_structure_Algorithms_and_coding_interview_questions;
 
 import java.util.Scanner;
-/**
- * Java Program to check if a number is Prime or Not. This program accepts a
- * number from command prompt and check if it is prime or not.
- *
- * @author  http://java67.blogspot.com
- */
+
 public class PrimeTester {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
         int number = Integer.MAX_VALUE;
         System.out.println("Enter number to check if prime or not ");

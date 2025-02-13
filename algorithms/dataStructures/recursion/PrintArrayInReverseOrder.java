@@ -1,4 +1,4 @@
-package dataStructures.recursion;
+package algorithms.dataStructures.recursion;
 
 public class PrintArrayInReverseOrder {
     public static void main(String[] args) {

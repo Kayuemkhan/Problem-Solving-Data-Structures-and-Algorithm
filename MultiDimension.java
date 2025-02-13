@@ -21,24 +21,8 @@ public class MultiDimension {
 //        }
 
 
-        char[] arr = {'h','e','l','l','o'};
-
-        swapping(arr);
-
-
 
     }
 
-    private static void swapping(char[] arr) {
-        int s =0;
-        int e = arr.length-1;
-        while (s != e){
-            char temp = arr[s] ;
-            arr[s] = arr[e];
-            arr[e] = temp;
-            s++;
-            e--;
-        }
-        System.out.println(arr);
-    }
+
 }

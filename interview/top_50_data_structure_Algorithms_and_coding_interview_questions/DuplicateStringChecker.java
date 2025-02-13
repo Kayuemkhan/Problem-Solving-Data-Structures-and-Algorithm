@@ -3,7 +3,7 @@ package interview.top_50_data_structure_Algorithms_and_coding_interview_question
 public class DuplicateStringChecker {
 
     public static boolean bruteforce(String[] input) {
-        int j =0;
+        int j = 0;
         for (String s : input) {
             if (s.equals(input[j])) {
                 return true;
@@ -16,7 +16,7 @@ public class DuplicateStringChecker {
 
     public static void main(String[] args) {
         // Create an array of strings to check for duplicates
-        String[] inputArray = { "apple", "banana", "cherry", "apple", "date" };
+        String[] inputArray = {"apple", "banana", "cherry", "apple", "date"};
 
         // Call the bruteforce method to check for duplicates
         boolean hasDuplicates = bruteforce(inputArray);

@@ -1,13 +1,10 @@
 package interview.top_50_data_structure_Algorithms_and_coding_interview_questions;
 
 import java.util.Arrays;
-/**
- * Java program to find largest and smallest number from an array in Java.
- * You cannot use any library method both from Java and third-party library.
- */
+
 public class FindMaximumMinimumArrayDemo{
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         largestAndSmallest(new int[]{-20, 34, 21, -87, 92,
                              Integer.MAX_VALUE});
         largestAndSmallest(new int[]{10, Integer.MIN_VALUE, -2});
