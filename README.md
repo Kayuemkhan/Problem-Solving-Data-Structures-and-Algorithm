@@ -13,8 +13,9 @@
     <h3>
     <i>
 
-
-**Goal:** 
+<details>
+    <summary><span id=codeforces>Codeforces Lover</summary>
+        **Goal:** 
 Solve at least $25$ problems in total from Contest 1 and Contest 2 and at least $15$ problems from Contest 3.
 - Contest 1: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219158)
 - Contest 2: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219432)
@@ -383,6 +384,8 @@ Solve at least $25$ problems in total from Contest 1 and Contest 2 and at least 
 | 58  | 1433D  | [Districts Connection](https://codeforces.com/problemset/problem/1433/D)                              | 1200   |
 | 59  | 977C   | [Less or Equal](https://codeforces.com/problemset/problem/977/C)                                      | 1200   |
 </details> 
+
+</details>
 
 
 
