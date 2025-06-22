@@ -10,7 +10,7 @@
 <body>
     <div id = "algorithm">
     <h1> Problem Solving </h1>
-    <h3>
+  
     <i>
 
     <h1>Learning Algorithm : </h1> </i> </h3> </div>
