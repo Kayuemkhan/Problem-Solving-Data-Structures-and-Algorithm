@@ -13,6 +13,157 @@
     <h3>
     <i>
 
+    <h1>Learning Algorithm : </h1> </i> </h3> </div>
+
+<h3>Data Structure:</h3>
+
+- Array
+- List(Linked Lists, Doubly Linked List)
+- Stack
+- Queue
+- Binary Tree (Balanced And Complete trees)
+- Graphs( Directed And Undirected)
+- Maps And Sets
+- Heaps ( Min And Max Heaps)
+- Union-find
+- Tries
+
+<h3>Algorithms:</h3>
+
+- Sorting(Quick, Merge, Bucket)
+- Binary Search( Very Common)
+- Tree Traversal (preorder, in order, post order)
+- BFS And DFS (Very Common)
+- Recursion
+- Divide And Conquer
+- Greedy
+- Finding All permutations and combinations
+- Dynamic Programming
+
+<h3>Other:</h3>
+
+- Bit Manipulation
+- String Manipulation
+- Basic Math (Euclidean Distance , Long Division, integer division and
+  Modules , means and median, prime numbers, Fibonacci Series, sum of sequence of numbers)
+- Time Complexity (Very Important)
+
+<h3>Tricky Parts:</h3>
+
+- off-by-one errors
+- infinite loops
+- using stringbuilders to build strings
+- Date representation and Manipulation
+- integer vs Double Precision
+- overflow
+- divide by zero
+- edge case checking
+- out of range errors
+- too many if/ else statements
+- too many nested loops
+- repeated code
+- null pointer exception
+
+<h3>Some Important Tricks: </h3>
+Source : A **linkedIN** posts
+
+    If input array is sorted then
+     - Binary search
+     - Two pointers
+<br>
+
+    If asked for all permutations/subsets then
+     - Backtracking
+<br>
+
+    If given a tree then
+     - DFS
+     - BFS
+<br>
+
+    If given a graph then
+    - DFS
+    - BFS
+<br>
+
+    If given a linked list then
+    - Two pointers
+<br>
+
+    If recursion is banned then
+    - Stack
+<br>
+
+    If must solve in-place then
+    - Swap corresponding values
+    - Store one or more different values in the same pointer
+
+<br>
+
+
+    If asked for maximum/minimum subarray/subset/options then
+    - Dynamic programming
+<br>
+
+    If asked for top/least K items then
+    - Heap
+<br>
+
+    If asked for common strings then
+    - Map
+    - Trie
+<br> 
+
+    Else
+    - Map/Set for O(1) time & O(n) space
+    - Sort input for O(nlogn) time and O(1) space
+
+
+
+<h3>Resources:</h3>
+
+- Cracking the Code Interview
+- Introduction to algorithms
+- Leetcode
+
+<h3>In Total:</h3>
+
+- Introduction to DSA
+- Pseudo Code and Flow Chart
+- Algorithm Analysis
+- Problem Solving
+- Stack
+- Queue
+- Double-ended Queue
+- Priority Queue
+- Structures of an Array
+- Array Algorithms
+- Searching Algorithms
+- Sorting Algorithms I
+- Matrix
+- Recursion
+- Divide & Conquer
+- Sorting Algorithm II
+- Linked Lists
+- Sets
+- Hash Table
+- Greedy Algorithms
+- Dynamic Programmings
+- Binary Search Tree
+- Pre-order, Post-order, and In-order
+- AVL Tre
+- Trie
+- Heap
+- Heap Sort
+- Backtracking
+- Graph
+- BFS & DFS
+- Minimum Spanning Tree
+- Shortest Path
+- Topological Sort
+- Directed Graph
+
+
 <details>
     <br>
     <summary>Codeforces Lover</summary>
@@ -393,155 +544,6 @@ Solve $25$ problems from Contest 1 and Contest 2 and at least $15$ problems from
 
 
 
-<h1>Learning Algorithm : </h1> </i> </h3> </div>
-
-<h3>Data Structure:</h3>
-
-- Array
-- List(Linked Lists, Doubly Linked List)
-- Stack
-- Queue
-- Binary Tree (Balanced And Complete trees)
-- Graphs( Directed And Undirected)
-- Maps And Sets
-- Heaps ( Min And Max Heaps)
-- Union-find
-- Tries
-
-<h3>Algorithms:</h3>
-
-- Sorting(Quick, Merge, Bucket)
-- Binary Search( Very Common)
-- Tree Traversal (preorder, in order, post order)
-- BFS And DFS (Very Common)
-- Recursion
-- Divide And Conquer
-- Greedy
-- Finding All permutations and combinations
-- Dynamic Programming
-
-<h3>Other:</h3>
-
-- Bit Manipulation
-- String Manipulation
-- Basic Math (Euclidean Distance , Long Division, integer division and
-  Modules , means and median, prime numbers, Fibonacci Series, sum of sequence of numbers)
-- Time Complexity (Very Important)
-
-<h3>Tricky Parts:</h3>
-
-- off-by-one errors
-- infinite loops
-- using stringbuilders to build strings
-- Date representation and Manipulation
-- integer vs Double Precision
-- overflow
-- divide by zero
-- edge case checking
-- out of range errors
-- too many if/ else statements
-- too many nested loops
-- repeated code
-- null pointer exception
-
-<h3>Some Important Tricks: </h3>
-Source : A **linkedIN** posts
-
-    If input array is sorted then
-     - Binary search
-     - Two pointers
-<br>
-
-    If asked for all permutations/subsets then
-     - Backtracking
-<br>
-
-    If given a tree then
-     - DFS
-     - BFS
-<br>
-
-    If given a graph then
-    - DFS
-    - BFS
-<br>
-
-    If given a linked list then
-    - Two pointers
-<br>
-
-    If recursion is banned then
-    - Stack
-<br>
-
-    If must solve in-place then
-    - Swap corresponding values
-    - Store one or more different values in the same pointer
-
-<br>
-
-
-    If asked for maximum/minimum subarray/subset/options then
-    - Dynamic programming
-<br>
-
-    If asked for top/least K items then
-    - Heap
-<br>
-
-    If asked for common strings then
-    - Map
-    - Trie
-<br> 
-
-    Else
-    - Map/Set for O(1) time & O(n) space
-    - Sort input for O(nlogn) time and O(1) space
-
-
-
-<h3>Resources:</h3>
-
-- Cracking the Code Interview
-- Introduction to algorithms
-- Leetcode
-
-<h3>In Total:</h3>
-
-- Introduction to DSA
-- Pseudo Code and Flow Chart
-- Algorithm Analysis
-- Problem Solving
-- Stack
-- Queue
-- Double-ended Queue
-- Priority Queue
-- Structures of an Array
-- Array Algorithms
-- Searching Algorithms
-- Sorting Algorithms I
-- Matrix
-- Recursion
-- Divide & Conquer
-- Sorting Algorithm II
-- Linked Lists
-- Sets
-- Hash Table
-- Greedy Algorithms
-- Dynamic Programmings
-- Binary Search Tree
-- Pre-order, Post-order, and In-order
-- AVL Tre
-- Trie
-- Heap
-- Heap Sort
-- Backtracking
-- Graph
-- BFS & DFS
-- Minimum Spanning Tree
-- Shortest Path
-- Topological Sort
-- Directed Graph
 
 <div id="OOP">
 <h1>Learning OOP : </h1>
