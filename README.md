@@ -14,10 +14,11 @@
     <i>
 
 <details>
+    <br>
     <summary><span id=codeforces>Codeforces Lover</summary>
         <br>
         **Goal:** 
-Solve at least $25$ problems from Contest 1 and Contest 2 and at least $15$ problems from Contest 3.
+Solve $25$ problems from Contest 1 and Contest 2 and at least $15$ problems from Contest 3.
 - Contest 1: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219158)
 - Contest 2: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219432)
 - Contest 3: [link](https://vjudge.net/contest/468964)
