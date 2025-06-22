@@ -1,5 +1,5 @@
 > <h1> Keep cracking DS/Algo, Apply, Interview, Fail, and Repeat... </h1>
-
+<i> In this repo, I'll share the 
 <!DOCTYPE html>
 <html lang="en">
 <head>
