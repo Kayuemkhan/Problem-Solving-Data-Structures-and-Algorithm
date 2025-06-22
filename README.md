@@ -83,8 +83,8 @@
   <li><i>Cracking the Coding Interview</i> – Gayle Laakmann McDowell</li>
   <li><i>Introduction to Algorithms</i> – Cormen, Leiserson, Rivest, Stein</li>
   <li>LeetCode & GeeksforGeeks practice</li>
-  <li><i>Pathfinding & Graph Theory</i> – online courses & research papers</li>
-  <li><i>Algorithm Visualizers & Whiteboard Tools</i></li>
+  <li>Pathfinding & Graph Theory visual tools</li>
+  <li>roadmap.sh → Community-driven learning paths</li>
 </ul>
 
 <h2>8. Practice Roadmap</h2>
@@ -113,6 +113,16 @@
   <li>Follow roadmap.sh to fill knowledge gaps and track progress</li>
   <li>Track solved problems, difficulty levels, patterns learned</li>
 </ul>
+
+<h2>11. Practice Sets</h2>
+<ul>
+  <li><strong>🔹 Blind 75</strong> – A carefully curated set of must-know problems across major patterns</li>
+  <li><strong>🔹 NeetCode 150</strong> – Covers categorized LeetCode topics with increasing difficulty</li>
+  <li><strong>🔹 Top 100 Liked LeetCode Problems</strong> – Community favorites and common in interviews</li>
+  <li><strong>🔹 Striver's A2Z DSA Sheet</strong> – Comprehensive guided sheet from basics to advanced</li>
+  <li><strong>🔹 LeetCode Explore</strong> – Topic-specific guided paths by LeetCode itself</li>
+</ul>
+
 
 Solve $25$ problems from Contest 1 and Contest 2 and at least $15$ problems from Contest 3.
 - Contest 1: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219158)
