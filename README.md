@@ -14,7 +14,8 @@
     <i>
 
 
-**Goal:** Solve at least $25$ problems in total from Contest 1 and Contest 2 and at least $15$ problems from Contest 3.
+**Goal:** 
+Solve at least $25$ problems in total from Contest 1 and Contest 2 and at least $15$ problems from Contest 3.
 - Contest 1: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219158)
 - Contest 2: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219432)
 - Contest 3: [link](https://vjudge.net/contest/468964)
@@ -22,7 +23,7 @@
   Codeforces:
   </i>
 
-    <p>Then take 10 problems per day and try to solve them. Don't waste more than 30 mins per problem and then Watch Editorials...</p>
+    <p>Then take 10 problems per day and try to solve them. Don't waste more than 30 mins per problem and then watch Editorials...</p>
 <details>
   <summary><span id=800>800</span></summary>
 
