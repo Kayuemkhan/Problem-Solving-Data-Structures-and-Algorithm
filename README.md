@@ -15,7 +15,7 @@
 
 <details>
     <br>
-    <summary><span id=codeforces>Codeforces Lover</summary>
+    <summary>Codeforces Lover</summary>
         <br>
         **Goal:** 
 Solve $25$ problems from Contest 1 and Contest 2 and at least $15$ problems from Contest 3.
