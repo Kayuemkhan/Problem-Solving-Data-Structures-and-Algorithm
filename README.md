@@ -18,6 +18,8 @@
     <summary>Codeforces Lover</summary>
         <br>
         **Goal:** 
+    <br>
+    
 Solve $25$ problems from Contest 1 and Contest 2 and at least $15$ problems from Contest 3.
 - Contest 1: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219158)
 - Contest 2: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219432)
