@@ -1,5 +1,5 @@
 > <h1> Keep cracking DS/Algo, Apply, Interview, Fail, and Repeat... </h1>
-
+<i> In this repo, I'll share the 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +9,122 @@
 </head>
 <body>
     <div id = "algorithm">
-    <h1> Problem Solving </h1>
-    <h3>
-    <i>
+ <h1>🔧 Problem Solving Roadmap</h1>
+
+<h2>1. Foundations</h2>
+<ul>
+  <li><strong>Basic Data Types & Math</strong>: integers, floats, modulus, prime checks, Fibonacci, AP/GP, combinatorics</li>
+  <li><strong>Time & Space Complexity Analysis</strong>: Big O notation, trade-offs (recursive vs iterative, memory vs speed)</li>
+  <li><strong>Basic Coding Patterns</strong>: loops, conditionals, functions, error handling, string formatting</li>
+  <li><strong>Environment Setup</strong>: code editor, debugger, version control (git), testing framework</li>
+</ul>
+
+<h2>2. Core Data Structures</h2>
+<ul>
+  <li>📗 Array, Matrix</li>
+  <li>📘 Linked List (Singly, Doubly)</li>
+  <li>📙 Stack & Queue & Deque</li>
+  <li>📕 Hash Table / Map / Set</li>
+  <li>📗 Binary Tree (BST, Balanced, Heaps)</li>
+  <li>📘 Trie (Prefix Tree)</li>
+  <li>📙 Union-Find (Disjoint Set)</li>
+  <li>📕 Graphs (Adjacency List/Matrix)</li>
+</ul>
+
+<h2>3. Essential Algorithms</h2>
+<ul>
+  <li><strong>Sorting:</strong> Quick, Merge, Heap, Bucket, Counting, Radix</li>
+  <li><strong>Searching:</strong> Binary Search</li>
+  <li><strong>Tree Traversal:</strong> Pre‑, In‑, Post‑order</li>
+  <li><strong>Graph Search:</strong> BFS, DFS (recursive and iterative)</li>
+  <li><strong>Recursion & Divide & Conquer</strong></li>
+  <li><strong>Greedy Algorithms</strong></li>
+  <li><strong>Backtracking:</strong> permutations, subsets, N‑Queens</li>
+  <li><strong>Dynamic Programming:</strong> knapsack, LIS, subarrays, memoization vs tabulation</li>
+  <li><strong>Heaps & Priority Queues:</strong> top‑K, streaming data, merging sorted lists</li>
+</ul>
+
+<h2>4. Specialized Techniques</h2>
+<ul>
+  <li><strong>Two-Pointer & Sliding Window</strong>: sorted arrays, substring problems, maximum sum/window size</li>
+  <li><strong>Bit Manipulation:</strong> flip, set, clear, XOR, in-place tricks</li>
+  <li><strong>String Algorithms:</strong> pattern matching, regex, trie-based autocomplete, rolling-hash, suffix-array basics</li>
+  <li><strong>Mathematical Algorithms:</strong> GCD, modular arithmetic, prime sieve, fast exponentiation</li>
+  <li><strong>Union-Find:</strong> connectivity, cycle detection, DSU with path compression & union by rank</li>
+  <li><strong>Advanced Graph:</strong> Dijkstra, Bellman-Ford, Floyd-Warshall, MST (Kruskal, Prim), Topological sort, SCCs</li>
+</ul>
+
+<h2>5. Quality & Robustness</h2>
+<ul>
+  <li><strong>Defensive Coding:</strong> edge cases, null checks, off‑by‑one, divide‑by‑zero, overflow</li>
+  <li><strong>Code Readability & Refactoring:</strong> DRY, clean abstractions, meaningful variable names, SOLID principles</li>
+  <li><strong>Testing:</strong> unit tests, boundary cases, mocking, assertions</li>
+  <li><strong>Debugging:</strong> stepping, breakpoints, logging, print tracing</li>
+  <li><strong>Performance Profiling:</strong> bottleneck identification, time/space trade-offs</li>
+  <li><strong>System Thinking:</strong> breaking large problems, API/data contracts, incremental architecture</li>
+</ul>
+
+<h2>6. Interview Patterns & Heuristics</h2>
+<ul>
+  <li><strong>Sorted array →</strong> Binary search, two pointers, sliding window</li>
+  <li><strong>Linked list →</strong> two pointers (fast/slow, reverse, merge)</li>
+  <li><strong>Permutations/subsets →</strong> backtracking</li>
+  <li><strong>Tree/graph →</strong> DFS/BFS</li>
+  <li><strong>Top‑K elements →</strong> heap</li>
+  <li><strong>Max/min subarray →</strong> dynamic programming (Kadane’s)</li>
+  <li><strong>Common strings →</strong> hashmap/trie</li>
+  <li><strong>No recursion allowed →</strong> explicit stack</li>
+  <li><strong>In-place constraints →</strong> swaps, careful indexing, bit tricks</li>
+  <li><strong>Unstructured input →</strong> sort or hash depending on uniqueness/duplicates</li>
+</ul>
+
+<h2>7. Learning Resources</h2>
+<ul>
+  <li><i>Cracking the Coding Interview</i> – Gayle Laakmann McDowell</li>
+  <li><i>Introduction to Algorithms</i> – Cormen, Leiserson, Rivest, Stein</li>
+  <li>LeetCode & GeeksforGeeks practice</li>
+  <li>Pathfinding & Graph Theory visual tools</li>
+  <li>roadmap.sh → Community-driven learning paths</li>
+</ul>
+
+<h2>8. Practice Roadmap</h2>
+<ol>
+  <li>⚙️ Fundamentals: Easy arrays, strings, math problems</li>
+  <li>🚧 Intermediate: Linked lists, stacks, queues, sorting/searching</li>
+  <li>🌳 Advanced DS & DP: trees, graphs, backtracking, DP</li>
+  <li>🏆 Competitive & interview prep: timed mock interviews, mixed topics</li>
+  <li>🔁 Review & Refactor: revisit old problems, clean up code, improve test coverage</li>
+</ol>
+
+<h2>9. Real-World Applications</h2>
+<ul>
+  <li>🔐 Caching & indexing (hash tables, LRU caches)</li>
+  <li>🚗 Navigation/routing (graphs, Dijkstra, A*)</li>
+  <li>🔍 Search autocomplete (tries, prefix trees)</li>
+  <li>📊 Real‑time data streaming (heaps, sliding windows)</li>
+  <li>🛠️ System design hooks (union-find, disjoint sets, event scheduling)</li>
+</ul>
+
+<h2>10. Continuous Improvement</h2>
+<ul>
+  <li>Participate in contests (Codeforces, AtCoder, TopCoder)</li>
+  <li>Study others' solutions & editorial explanations</li>
+  <li>Teach or blog about topics—teaching reinforces learning</li>
+  <li>Follow roadmap.sh to fill knowledge gaps and track progress</li>
+  <li>Track solved problems, difficulty levels, patterns learned</li>
+</ul>
+
+<h2>11. Practice Sets</h2>
+<ul>
+  <li><strong>🔹 Blind 75</strong> – A carefully curated set of must-know problems across major patterns</li>
+  <li><strong>🔹 NeetCode 150</strong> – Covers categorized LeetCode topics with increasing difficulty</li>
+  <li><strong>🔹 Top 100 Liked LeetCode Problems</strong> – Community favorites and common in interviews</li>
+  <li><strong>🔹 Striver's A2Z DSA Sheet</strong> – Comprehensive guided sheet from basics to advanced</li>
+  <li><strong>🔹 LeetCode Explore</strong> – Topic-specific guided paths by LeetCode itself</li>
+</ul>
 
 
-**Goal:** Solve at least $25$ problems in total from Contest 1 and Contest 2 and at least $15$ problems from Contest 3.
+Solve $25$ problems from Contest 1 and Contest 2 and at least $15$ problems from Contest 3.
 - Contest 1: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219158)
 - Contest 2: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219432)
 - Contest 3: [link](https://vjudge.net/contest/468964)
@@ -22,7 +132,7 @@
   Codeforces:
   </i>
 
-    <p>Then take 10 problems per day and try to solve them. Don't waste more than 30 mins per problem and then Watch Editorials...</p>
+    <p>Then take 10 problems per day and try to solve them. Don't waste more than 30 mins per problem and then watch Editorials...</p>
 <details>
   <summary><span id=800>800</span></summary>
 
@@ -383,157 +493,10 @@
 | 59  | 977C   | [Less or Equal](https://codeforces.com/problemset/problem/977/C)                                      | 1200   |
 </details> 
 
-
-
-<h1>Learning Algorithm : </h1> </i> </h3> </div>
-
-<h3>Data Structure:</h3>
-
-- Array
-- List(Linked Lists, Doubly Linked List)
-- Stack
-- Queue
-- Binary Tree (Balanced And Complete trees)
-- Graphs( Directed And Undirected)
-- Maps And Sets
-- Heaps ( Min And Max Heaps)
-- Union-find
-- Tries
-
-<h3>Algorithms:</h3>
-
-- Sorting(Quick, Merge, Bucket)
-- Binary Search( Very Common)
-- Tree Traversal (preorder, in order, post order)
-- BFS And DFS (Very Common)
-- Recursion
-- Divide And Conquer
-- Greedy
-- Finding All permutations and combinations
-- Dynamic Programming
-
-<h3>Other:</h3>
-
-- Bit Manipulation
-- String Manipulation
-- Basic Math (Euclidean Distance , Long Division, integer division and
-  Modules , means and median, prime numbers, Fibonacci Series, sum of sequence of numbers)
-- Time Complexity (Very Important)
-
-<h3>Tricky Parts:</h3>
-
-- off-by-one errors
-- infinite loops
-- using stringbuilders to build strings
-- Date representation and Manipulation
-- integer vs Double Precision
-- overflow
-- divide by zero
-- edge case checking
-- out of range errors
-- too many if/ else statements
-- too many nested loops
-- repeated code
-- null pointer exception
-
-<h3>Some Important Tricks: </h3>
-Source : A **linkedIN** posts
-
-    If input array is sorted then
-     - Binary search
-     - Two pointers
-<br>
-
-    If asked for all permutations/subsets then
-     - Backtracking
-<br>
-
-    If given a tree then
-     - DFS
-     - BFS
-<br>
-
-    If given a graph then
-    - DFS
-    - BFS
-<br>
-
-    If given a linked list then
-    - Two pointers
-<br>
-
-    If recursion is banned then
-    - Stack
-<br>
-
-    If must solve in-place then
-    - Swap corresponding values
-    - Store one or more different values in the same pointer
-
-<br>
-
-
-    If asked for maximum/minimum subarray/subset/options then
-    - Dynamic programming
-<br>
-
-    If asked for top/least K items then
-    - Heap
-<br>
-
-    If asked for common strings then
-    - Map
-    - Trie
-<br> 
-
-    Else
-    - Map/Set for O(1) time & O(n) space
-    - Sort input for O(nlogn) time and O(1) space
+</details>
 
 
 
-<h3>Resources:</h3>
-
-- Cracking the Code Interview
-- Introduction to algorithms
-- Leetcode
-
-<h3>In Total:</h3>
-
-- Introduction to DSA
-- Pseudo Code and Flow Chart
-- Algorithm Analysis
-- Problem Solving
-- Stack
-- Queue
-- Double-ended Queue
-- Priority Queue
-- Structures of an Array
-- Array Algorithms
-- Searching Algorithms
-- Sorting Algorithms I
-- Matrix
-- Recursion
-- Divide & Conquer
-- Sorting Algorithm II
-- Linked Lists
-- Sets
-- Hash Table
-- Greedy Algorithms
-- Dynamic Programmings
-- Binary Search Tree
-- Pre-order, Post-order, and In-order
-- AVL Tre
-- Trie
-- Heap
-- Heap Sort
-- Backtracking
-- Graph
-- BFS & DFS
-- Minimum Spanning Tree
-- Shortest Path
-- Topological Sort
-- Directed Graph
 
 <div id="OOP">
 <h1>Learning OOP : </h1>
