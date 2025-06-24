@@ -22,8 +22,8 @@ public class SelectionSort {
 
         }
 
-        for(int k =0;k<arr.length;k++){
-            System.out.println(arr[k]);
+        for (int i : arr) {
+            System.out.println(i);
         }
     }
 
