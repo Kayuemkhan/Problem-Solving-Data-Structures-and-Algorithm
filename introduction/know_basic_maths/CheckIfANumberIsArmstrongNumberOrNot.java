@@ -17,13 +17,13 @@ public class CheckIfANumberIsArmstrongNumberOrNot {
         int sumofpower = 0;
         while (n != 0) {
             int digit = n % 10;
-            sumofpower += Math.pow(digit, count);
+            sumofpower += (int) Math.pow(digit, count);
             n /= 10;
         }
         return (sumofpower == originalno);
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int n1 = 153;
         if (ArmstrongNumber(n1)) {
             System.out.println("Yes, it is an Armstrong Number\n");
