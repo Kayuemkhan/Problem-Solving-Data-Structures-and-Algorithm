@@ -5,14 +5,17 @@ import java.util.Scanner;
 public class PrimeTester {
 
     public static void main(String[] args) {
-        Scanner scnr = new Scanner(System.in);
-        int number = Integer.MAX_VALUE;
-        System.out.println("Enter number to check if prime or not ");
-        while (number != 0) {
-            number = scnr.nextInt();
-            System.out.printf("Does %d is prime? %s %s  %s %n", number,
-                    isPrime(number), isPrimeOrNot(number), isPrimeNumber(number));
-        }
+        String a = "abdul";
+        a = "babul";
+        System.out.println(a);
+//        Scanner scnr = new Scanner(System.in);
+//        int number = Integer.MAX_VALUE;
+//        System.out.println("Enter number to check if prime or not ");
+//        while (number != 0) {
+//            number = scnr.nextInt();
+//            System.out.printf("Does %d is prime? %s %s  %s %n", number,
+//                    isPrime(number), isPrimeOrNot(number), isPrimeNumber(number));
+//        }
     }
 
 
