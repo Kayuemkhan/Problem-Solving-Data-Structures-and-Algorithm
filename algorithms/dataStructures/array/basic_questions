@@ -1,5 +1,5 @@
 Q1. What will happen if you do not initialize an Array?
-->
+
 If the array is not initialized at the time of declaration or any time after that then it will contain some random values in each memory position. These random values can be of two types:
 
 1. Default values.
