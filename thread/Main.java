@@ -2,22 +2,29 @@ package thread;
 
 public class Main {
     public static void main(String[] args) {
-        ExtendedThreadRunnable extendedThreadRunnable = new ExtendedThreadRunnable();
+       String s = "abbcccddddeeeeedcba";
 
-        Thread thread = new Thread(extendedThreadRunnable);
-        thread.setName("New Thread");
-        thread.start();
-        for (int i = 0; i < 5; i++) {
-            System.out.println("[" +i +"] Inside "+ Thread.currentThread().getName() );
-            sleepOneSecond();
-        }
+        System.out.println(maxPower(s));
     }
-    private static void sleepOneSecond() {
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+    static int maxPower(String s) {
+        int n = s.length();
+        int maxCount = 0, count = 1;
 
+        if (n == 0)
+            return 0;
+
+
+
+        for (int i = 1; i < n; i++) {
+            if(s.charAt(i) == s.charAt(i-1)){
+                count++;
+            }
+            else {
+                maxCount = Math.max(maxCount,count);
+                count=1;
+            }
         }
+
+        return Math.max(maxCount,count);
     }
 }
