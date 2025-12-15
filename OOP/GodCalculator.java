@@ -143,22 +143,32 @@ public class GodCalculator {
     
     public static void main(String[] args) {
         // Problem 1: Confusing state management
-        add(5, 3, 1);
-        multiply(4, 2, 2);
-        System.out.println("Slot 1: " + getFromSlot(1)); // 8
-        System.out.println("Slot 2: " + getFromSlot(2)); // 8
-        
-        // Problem 2: Can't have independent calculators
-        // Everything shares the same global state!
-        
-        // Problem 3: Operations accidentally overwrite each other
-        add(10, 20, 1);
-        System.out.println("Slot 1: " + getFromSlot(1)); // 30 - lost previous value!
-        
-        // Problem 4: No encapsulation - anyone can mess with state
-        result1 = 999; // Direct access - breaks everything
-        
-        printHistory();
-        clearAll();
+//        add(5, 3, 1);
+//        multiply(4, 2, 2);
+//        System.out.println("Slot 1: " + getFromSlot(1)); // 8
+//        System.out.println("Slot 2: " + getFromSlot(2)); // 8
+//
+//        // Problem 2: Can't have independent calculators
+//        // Everything shares the same global state!
+//
+//        // Problem 3: Operations accidentally overwrite each other
+//        add(10, 20, 1);
+//        System.out.println("Slot 1: " + getFromSlot(1)); // 30 - lost previous value!
+//
+//        // Problem 4: No encapsulation - anyone can mess with state
+//        result1 = 999; // Direct access - breaks everything
+//
+//        printHistory();
+//        clearAll();
+
+        User myUser = createUser();
+        myUser.setAge(40);
+        System.out.println(myUser.getAge());
+
+
+    }
+    public static User createUser() {
+        User localUser = new User("Charlie", 35,"a@me.com");
+        return localUser;
     }
 }
