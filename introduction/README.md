@@ -22,14 +22,14 @@
 
     Complexity analysis is defined as a technique to characterise the time taken by an 
     algorithm with respect to input size (independent from the machine, language and compiler). 
-    It is used for evaluating the variations of execution time on different algorithms.
+    It is used for evaluating the variations of execution time on different ds_algorithms.
 
 <br>
 
     What is the need for Complexity Analysis?
     1. Complexity Analysis determines the amount of time and space resources required 
     to execute it.
-    2. It is used for comparing different algorithms on different input sizes.
+    2. It is used for comparing different ds_algorithms on different input sizes.
     3. Complexity helps to determine the difficulty of a problem.
     often measured by how much time and space (memory) it takes to solve a particular problem
 
@@ -86,7 +86,7 @@ this course.
 </table>
 </div>
 
-<strong>The growths of some algorithms, such as those with orders O(2^n) and O(n!) in particular, are known to be
+<strong>The growths of some ds_algorithms, such as those with orders O(2^n) and O(n!) in particular, are known to be
 explosive</strong>
 <br><br>
 
@@ -247,7 +247,7 @@ When an algorithm has a quadratic order of growth, its steps increase in proport
 <strong > N.B. :Data & Pictures collected from <a href="https://cs61a.org/study-guide/orders-of-growth/" >Link</a> </strong>
 
 <h2>Asymptotic Notation and Analysis (Based on input size) in Complexity Analysis of Algorithms </h2>
-Asymptotic Analysis is defined as the big idea that handles the above issues in analyzing algorithms. In Asymptotic Analysis, we evaluate the performance of an algorithm in terms of input size (we don’t measure the actual running time). We calculate, how the time (or space) taken by an algorithm increases with the input size.
+Asymptotic Analysis is defined as the big idea that handles the above issues in analyzing ds_algorithms. In Asymptotic Analysis, we evaluate the performance of an algorithm in terms of input size (we don’t measure the actual running time). We calculate, how the time (or space) taken by an algorithm increases with the input size.
 <br>
 
 Asymptotic notation is a way to describe the running time or space complexity of an algorithm based on the input size. It is commonly used in complexity analysis to describe how an algorithm performs as the size of the input grows. The three most commonly used notations are Big O, Omega, and Theta.
@@ -315,7 +315,7 @@ But, after a certain value of input array size, the Binary Search will definitel
 
 <h1>How to Analyse Loops for Complexity Analysis of Algorithms</h1>
 
-The analysis of loops for the complexity analysis of algorithms involves finding the number of operations performed by a loop as a function of the input size. This is usually done by determining the number of iterations of the loop and the number of operations performed in each iteration.
+The analysis of loops for the complexity analysis of ds_algorithms involves finding the number of operations performed by a loop as a function of the input size. This is usually done by determining the number of iterations of the loop and the number of operations performed in each iteration.
 
 <strong> Constant Time Complexity O(1):</strong>
 The time complexity of a function (or set of statements) is considered as O(1) if it doesn’t contain a loop, recursion, and call to any other non-constant time function. 
@@ -465,7 +465,7 @@ Auxiliary Space is the extra space or temporary space used by an algorithm.
 
 <i>The space Complexity of an algorithm is the total space taken by the algorithm with respect to the input size. Space complexity includes both Auxiliary space and space used by input.</i>
 
-For example, if we want to compare standard sorting algorithms on the basis of space, then Auxiliary Space would be a better criterion than Space Complexity. Merge Sort uses O(n) auxiliary space, Insertion sort, and Heap Sort use O(1) auxiliary space. The space complexity of all these sorting algorithms is O(n) though.
+For example, if we want to compare standard sorting ds_algorithms on the basis of space, then Auxiliary Space would be a better criterion than Space Complexity. Merge Sort uses O(n) auxiliary space, Insertion sort, and Heap Sort use O(1) auxiliary space. The space complexity of all these sorting ds_algorithms is O(n) though.
 
 <strong>In recursive calls stack space also counts.</strong>
 

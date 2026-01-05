@@ -1,7 +1,7 @@
 Cheatsheets
 Code templates
 <br>
-Here are code templates for common patterns for all the data structures and algorithms looked at in LICC.
+Here are code templates for common patterns for all the data structures and ds_algorithms looked at in LICC.
 
 <b> Two pointers: one input, opposite ends </b>
 
